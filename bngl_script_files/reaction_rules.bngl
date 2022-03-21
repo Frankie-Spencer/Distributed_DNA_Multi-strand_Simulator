@@ -1,0 +1,361 @@
+begin reaction rules
+
+
+# 1 binding interaction between length-3 complementary segments of two un-connected ssDNA
+
+N(b~A,3!1,W,fg).N(b~A,5!1,3!2,W,fg).N(b~A,5!2,W,fg) + N(b~T,3!3,W,fg).N(b~T,5!3,3!4,W,fg).N(b~T,5!4,W,fg) -> N(b~A,3!1,W!5,fg!11).N(b~A,5!1,3!2,W!6,fg).N(b~A,5!2,W!7,fg!22).N(b~T,3!3,W!7,fg!22).N(b~T,5!3,3!4,W!6,fg).N(b~T,5!4,W!5,fg!11) k1
+N(b~A,3!1,W,fg).N(b~A,5!1,3!2,W,fg).N(b~T,5!2,W,fg) + N(b~A,3!3,W,fg).N(b~T,5!3,3!4,W,fg).N(b~T,5!4,W,fg) -> N(b~A,3!1,W!5,fg!11).N(b~A,5!1,3!2,W!6,fg).N(b~T,5!2,W!7,fg!22).N(b~A,3!3,W!7,fg!22).N(b~T,5!3,3!4,W!6,fg).N(b~T,5!4,W!5,fg!11) k1
+N(b~A,3!1,W,fg).N(b~A,5!1,3!2,W,fg).N(b~C,5!2,W,fg) + N(b~G,3!3,W,fg).N(b~T,5!3,3!4,W,fg).N(b~T,5!4,W,fg) -> N(b~A,3!1,W!5,fg!11).N(b~A,5!1,3!2,W!6,fg).N(b~C,5!2,W!7,fg!22).N(b~G,3!3,W!7,fg!22).N(b~T,5!3,3!4,W!6,fg).N(b~T,5!4,W!5,fg!11) k1
+N(b~A,3!1,W,fg).N(b~A,5!1,3!2,W,fg).N(b~G,5!2,W,fg) + N(b~C,3!3,W,fg).N(b~T,5!3,3!4,W,fg).N(b~T,5!4,W,fg) -> N(b~A,3!1,W!5,fg!11).N(b~A,5!1,3!2,W!6,fg).N(b~G,5!2,W!7,fg!22).N(b~C,3!3,W!7,fg!22).N(b~T,5!3,3!4,W!6,fg).N(b~T,5!4,W!5,fg!11) k1
+
+N(b~A,3!1,W,fg).N(b~T,5!1,3!2,W,fg).N(b~A,5!2,W,fg) + N(b~T,3!3,W,fg).N(b~A,5!3,3!4,W,fg).N(b~T,5!4,W,fg) -> N(b~A,3!1,W!5,fg!11).N(b~T,5!1,3!2,W!6,fg).N(b~A,5!2,W!7,fg!22).N(b~T,3!3,W!7,fg!22).N(b~A,5!3,3!4,W!6,fg).N(b~T,5!4,W!5,fg!11) k1
+N(b~A,3!1,W,fg).N(b~T,5!1,3!2,W,fg).N(b~T,5!2,W,fg) + N(b~A,3!3,W,fg).N(b~A,5!3,3!4,W,fg).N(b~T,5!4,W,fg) -> N(b~A,3!1,W!5,fg!11).N(b~T,5!1,3!2,W!6,fg).N(b~T,5!2,W!7,fg!22).N(b~A,3!3,W!7,fg!22).N(b~A,5!3,3!4,W!6,fg).N(b~T,5!4,W!5,fg!11) k1
+N(b~A,3!1,W,fg).N(b~T,5!1,3!2,W,fg).N(b~C,5!2,W,fg) + N(b~G,3!3,W,fg).N(b~A,5!3,3!4,W,fg).N(b~T,5!4,W,fg) -> N(b~A,3!1,W!5,fg!11).N(b~T,5!1,3!2,W!6,fg).N(b~C,5!2,W!7,fg!22).N(b~G,3!3,W!7,fg!22).N(b~A,5!3,3!4,W!6,fg).N(b~T,5!4,W!5,fg!11) k1
+N(b~A,3!1,W,fg).N(b~T,5!1,3!2,W,fg).N(b~G,5!2,W,fg) + N(b~C,3!3,W,fg).N(b~A,5!3,3!4,W,fg).N(b~T,5!4,W,fg) -> N(b~A,3!1,W!5,fg!11).N(b~T,5!1,3!2,W!6,fg).N(b~G,5!2,W!7,fg!22).N(b~C,3!3,W!7,fg!22).N(b~A,5!3,3!4,W!6,fg).N(b~T,5!4,W!5,fg!11) k1
+
+N(b~A,3!1,W,fg).N(b~C,5!1,3!2,W,fg).N(b~A,5!2,W,fg) + N(b~T,3!3,W,fg).N(b~G,5!3,3!4,W,fg).N(b~T,5!4,W,fg) -> N(b~A,3!1,W!5,fg!11).N(b~C,5!1,3!2,W!6,fg).N(b~A,5!2,W!7,fg!22).N(b~T,3!3,W!7,fg!22).N(b~G,5!3,3!4,W!6,fg).N(b~T,5!4,W!5,fg!11) k1
+N(b~A,3!1,W,fg).N(b~C,5!1,3!2,W,fg).N(b~T,5!2,W,fg) + N(b~A,3!3,W,fg).N(b~G,5!3,3!4,W,fg).N(b~T,5!4,W,fg) -> N(b~A,3!1,W!5,fg!11).N(b~C,5!1,3!2,W!6,fg).N(b~T,5!2,W!7,fg!22).N(b~A,3!3,W!7,fg!22).N(b~G,5!3,3!4,W!6,fg).N(b~T,5!4,W!5,fg!11) k1
+N(b~A,3!1,W,fg).N(b~C,5!1,3!2,W,fg).N(b~C,5!2,W,fg) + N(b~G,3!3,W,fg).N(b~G,5!3,3!4,W,fg).N(b~T,5!4,W,fg) -> N(b~A,3!1,W!5,fg!11).N(b~C,5!1,3!2,W!6,fg).N(b~C,5!2,W!7,fg!22).N(b~G,3!3,W!7,fg!22).N(b~G,5!3,3!4,W!6,fg).N(b~T,5!4,W!5,fg!11) k1
+N(b~A,3!1,W,fg).N(b~C,5!1,3!2,W,fg).N(b~G,5!2,W,fg) + N(b~C,3!3,W,fg).N(b~G,5!3,3!4,W,fg).N(b~T,5!4,W,fg) -> N(b~A,3!1,W!5,fg!11).N(b~C,5!1,3!2,W!6,fg).N(b~G,5!2,W!7,fg!22).N(b~C,3!3,W!7,fg!22).N(b~G,5!3,3!4,W!6,fg).N(b~T,5!4,W!5,fg!11) k1
+
+N(b~A,3!1,W,fg).N(b~G,5!1,3!2,W,fg).N(b~A,5!2,W,fg) + N(b~T,3!3,W,fg).N(b~C,5!3,3!4,W,fg).N(b~T,5!4,W,fg) -> N(b~A,3!1,W!5,fg!11).N(b~G,5!1,3!2,W!6,fg).N(b~A,5!2,W!7,fg!22).N(b~T,3!3,W!7,fg!22).N(b~C,5!3,3!4,W!6,fg).N(b~T,5!4,W!5,fg!11) k1
+N(b~A,3!1,W,fg).N(b~G,5!1,3!2,W,fg).N(b~T,5!2,W,fg) + N(b~A,3!3,W,fg).N(b~C,5!3,3!4,W,fg).N(b~T,5!4,W,fg) -> N(b~A,3!1,W!5,fg!11).N(b~G,5!1,3!2,W!6,fg).N(b~T,5!2,W!7,fg!22).N(b~A,3!3,W!7,fg!22).N(b~C,5!3,3!4,W!6,fg).N(b~T,5!4,W!5,fg!11) k1
+N(b~A,3!1,W,fg).N(b~G,5!1,3!2,W,fg).N(b~C,5!2,W,fg) + N(b~G,3!3,W,fg).N(b~C,5!3,3!4,W,fg).N(b~T,5!4,W,fg) -> N(b~A,3!1,W!5,fg!11).N(b~G,5!1,3!2,W!6,fg).N(b~C,5!2,W!7,fg!22).N(b~G,3!3,W!7,fg!22).N(b~C,5!3,3!4,W!6,fg).N(b~T,5!4,W!5,fg!11) k1
+N(b~A,3!1,W,fg).N(b~G,5!1,3!2,W,fg).N(b~G,5!2,W,fg) + N(b~C,3!3,W,fg).N(b~C,5!3,3!4,W,fg).N(b~T,5!4,W,fg) -> N(b~A,3!1,W!5,fg!11).N(b~G,5!1,3!2,W!6,fg).N(b~G,5!2,W!7,fg!22).N(b~C,3!3,W!7,fg!22).N(b~C,5!3,3!4,W!6,fg).N(b~T,5!4,W!5,fg!11) k1
+
+
+
+N(b~T,3!1,W,fg).N(b~A,5!1,3!2,W,fg).N(b~A,5!2,W,fg) + N(b~T,3!3,W,fg).N(b~T,5!3,3!4,W,fg).N(b~A,5!4,W,fg) -> N(b~T,3!1,W!5,fg!11).N(b~A,5!1,3!2,W!6,fg).N(b~A,5!2,W!7,fg!22).N(b~T,3!3,W!7,fg!22).N(b~T,5!3,3!4,W!6,fg).N(b~A,5!4,W!5,fg!11) k1
+N(b~T,3!1,W,fg).N(b~A,5!1,3!2,W,fg).N(b~T,5!2,W,fg) + N(b~A,3!3,W,fg).N(b~T,5!3,3!4,W,fg).N(b~A,5!4,W,fg) -> N(b~T,3!1,W!5,fg!11).N(b~A,5!1,3!2,W!6,fg).N(b~T,5!2,W!7,fg!22).N(b~A,3!3,W!7,fg!22).N(b~T,5!3,3!4,W!6,fg).N(b~A,5!4,W!5,fg!11) k1
+N(b~T,3!1,W,fg).N(b~A,5!1,3!2,W,fg).N(b~C,5!2,W,fg) + N(b~G,3!3,W,fg).N(b~T,5!3,3!4,W,fg).N(b~A,5!4,W,fg) -> N(b~T,3!1,W!5,fg!11).N(b~A,5!1,3!2,W!6,fg).N(b~C,5!2,W!7,fg!22).N(b~G,3!3,W!7,fg!22).N(b~T,5!3,3!4,W!6,fg).N(b~A,5!4,W!5,fg!11) k1
+N(b~T,3!1,W,fg).N(b~A,5!1,3!2,W,fg).N(b~G,5!2,W,fg) + N(b~C,3!3,W,fg).N(b~T,5!3,3!4,W,fg).N(b~A,5!4,W,fg) -> N(b~T,3!1,W!5,fg!11).N(b~A,5!1,3!2,W!6,fg).N(b~G,5!2,W!7,fg!22).N(b~C,3!3,W!7,fg!22).N(b~T,5!3,3!4,W!6,fg).N(b~A,5!4,W!5,fg!11) k1
+
+N(b~T,3!1,W,fg).N(b~T,5!1,3!2,W,fg).N(b~A,5!2,W,fg) + N(b~T,3!3,W,fg).N(b~A,5!3,3!4,W,fg).N(b~A,5!4,W,fg) -> N(b~T,3!1,W!5,fg!11).N(b~T,5!1,3!2,W!6,fg).N(b~A,5!2,W!7,fg!22).N(b~T,3!3,W!7,fg!22).N(b~A,5!3,3!4,W!6,fg).N(b~A,5!4,W!5,fg!11) k1
+N(b~T,3!1,W,fg).N(b~T,5!1,3!2,W,fg).N(b~T,5!2,W,fg) + N(b~A,3!3,W,fg).N(b~A,5!3,3!4,W,fg).N(b~A,5!4,W,fg) -> N(b~T,3!1,W!5,fg!11).N(b~T,5!1,3!2,W!6,fg).N(b~T,5!2,W!7,fg!22).N(b~A,3!3,W!7,fg!22).N(b~A,5!3,3!4,W!6,fg).N(b~A,5!4,W!5,fg!11) k1
+N(b~T,3!1,W,fg).N(b~T,5!1,3!2,W,fg).N(b~C,5!2,W,fg) + N(b~G,3!3,W,fg).N(b~A,5!3,3!4,W,fg).N(b~A,5!4,W,fg) -> N(b~T,3!1,W!5,fg!11).N(b~T,5!1,3!2,W!6,fg).N(b~C,5!2,W!7,fg!22).N(b~G,3!3,W!7,fg!22).N(b~A,5!3,3!4,W!6,fg).N(b~A,5!4,W!5,fg!11) k1
+N(b~T,3!1,W,fg).N(b~T,5!1,3!2,W,fg).N(b~G,5!2,W,fg) + N(b~C,3!3,W,fg).N(b~A,5!3,3!4,W,fg).N(b~A,5!4,W,fg) -> N(b~T,3!1,W!5,fg!11).N(b~T,5!1,3!2,W!6,fg).N(b~G,5!2,W!7,fg!22).N(b~C,3!3,W!7,fg!22).N(b~A,5!3,3!4,W!6,fg).N(b~A,5!4,W!5,fg!11) k1
+
+N(b~T,3!1,W,fg).N(b~C,5!1,3!2,W,fg).N(b~A,5!2,W,fg) + N(b~T,3!3,W,fg).N(b~G,5!3,3!4,W,fg).N(b~A,5!4,W,fg) -> N(b~T,3!1,W!5,fg!11).N(b~C,5!1,3!2,W!6,fg).N(b~A,5!2,W!7,fg!22).N(b~T,3!3,W!7,fg!22).N(b~G,5!3,3!4,W!6,fg).N(b~A,5!4,W!5,fg!11) k1
+N(b~T,3!1,W,fg).N(b~C,5!1,3!2,W,fg).N(b~T,5!2,W,fg) + N(b~A,3!3,W,fg).N(b~G,5!3,3!4,W,fg).N(b~A,5!4,W,fg) -> N(b~T,3!1,W!5,fg!11).N(b~C,5!1,3!2,W!6,fg).N(b~T,5!2,W!7,fg!22).N(b~A,3!3,W!7,fg!22).N(b~G,5!3,3!4,W!6,fg).N(b~A,5!4,W!5,fg!11) k1
+N(b~T,3!1,W,fg).N(b~C,5!1,3!2,W,fg).N(b~C,5!2,W,fg) + N(b~G,3!3,W,fg).N(b~G,5!3,3!4,W,fg).N(b~A,5!4,W,fg) -> N(b~T,3!1,W!5,fg!11).N(b~C,5!1,3!2,W!6,fg).N(b~C,5!2,W!7,fg!22).N(b~G,3!3,W!7,fg!22).N(b~G,5!3,3!4,W!6,fg).N(b~A,5!4,W!5,fg!11) k1
+N(b~T,3!1,W,fg).N(b~C,5!1,3!2,W,fg).N(b~G,5!2,W,fg) + N(b~C,3!3,W,fg).N(b~G,5!3,3!4,W,fg).N(b~A,5!4,W,fg) -> N(b~T,3!1,W!5,fg!11).N(b~C,5!1,3!2,W!6,fg).N(b~G,5!2,W!7,fg!22).N(b~C,3!3,W!7,fg!22).N(b~G,5!3,3!4,W!6,fg).N(b~A,5!4,W!5,fg!11) k1
+
+N(b~T,3!1,W,fg).N(b~G,5!1,3!2,W,fg).N(b~A,5!2,W,fg) + N(b~T,3!3,W,fg).N(b~C,5!3,3!4,W,fg).N(b~A,5!4,W,fg) -> N(b~T,3!1,W!5,fg!11).N(b~G,5!1,3!2,W!6,fg).N(b~A,5!2,W!7,fg!22).N(b~T,3!3,W!7,fg!22).N(b~C,5!3,3!4,W!6,fg).N(b~A,5!4,W!5,fg!11) k1
+N(b~T,3!1,W,fg).N(b~G,5!1,3!2,W,fg).N(b~T,5!2,W,fg) + N(b~A,3!3,W,fg).N(b~C,5!3,3!4,W,fg).N(b~A,5!4,W,fg) -> N(b~T,3!1,W!5,fg!11).N(b~G,5!1,3!2,W!6,fg).N(b~T,5!2,W!7,fg!22).N(b~A,3!3,W!7,fg!22).N(b~C,5!3,3!4,W!6,fg).N(b~A,5!4,W!5,fg!11) k1
+N(b~T,3!1,W,fg).N(b~G,5!1,3!2,W,fg).N(b~C,5!2,W,fg) + N(b~G,3!3,W,fg).N(b~C,5!3,3!4,W,fg).N(b~A,5!4,W,fg) -> N(b~T,3!1,W!5,fg!11).N(b~G,5!1,3!2,W!6,fg).N(b~C,5!2,W!7,fg!22).N(b~G,3!3,W!7,fg!22).N(b~C,5!3,3!4,W!6,fg).N(b~A,5!4,W!5,fg!11) k1
+N(b~T,3!1,W,fg).N(b~G,5!1,3!2,W,fg).N(b~G,5!2,W,fg) + N(b~C,3!3,W,fg).N(b~C,5!3,3!4,W,fg).N(b~A,5!4,W,fg) -> N(b~T,3!1,W!5,fg!11).N(b~G,5!1,3!2,W!6,fg).N(b~G,5!2,W!7,fg!22).N(b~C,3!3,W!7,fg!22).N(b~C,5!3,3!4,W!6,fg).N(b~A,5!4,W!5,fg!11) k1
+
+
+
+N(b~C,3!1,W,fg).N(b~A,5!1,3!2,W,fg).N(b~A,5!2,W,fg) + N(b~T,3!3,W,fg).N(b~T,5!3,3!4,W,fg).N(b~G,5!4,W,fg) -> N(b~C,3!1,W!5,fg!11).N(b~A,5!1,3!2,W!6,fg).N(b~A,5!2,W!7,fg!22).N(b~T,3!3,W!7,fg!22).N(b~T,5!3,3!4,W!6,fg).N(b~G,5!4,W!5,fg!11) k1
+N(b~C,3!1,W,fg).N(b~A,5!1,3!2,W,fg).N(b~T,5!2,W,fg) + N(b~A,3!3,W,fg).N(b~T,5!3,3!4,W,fg).N(b~G,5!4,W,fg) -> N(b~C,3!1,W!5,fg!11).N(b~A,5!1,3!2,W!6,fg).N(b~T,5!2,W!7,fg!22).N(b~A,3!3,W!7,fg!22).N(b~T,5!3,3!4,W!6,fg).N(b~G,5!4,W!5,fg!11) k1
+N(b~C,3!1,W,fg).N(b~A,5!1,3!2,W,fg).N(b~C,5!2,W,fg) + N(b~G,3!3,W,fg).N(b~T,5!3,3!4,W,fg).N(b~G,5!4,W,fg) -> N(b~C,3!1,W!5,fg!11).N(b~A,5!1,3!2,W!6,fg).N(b~C,5!2,W!7,fg!22).N(b~G,3!3,W!7,fg!22).N(b~T,5!3,3!4,W!6,fg).N(b~G,5!4,W!5,fg!11) k1
+N(b~C,3!1,W,fg).N(b~A,5!1,3!2,W,fg).N(b~G,5!2,W,fg) + N(b~C,3!3,W,fg).N(b~T,5!3,3!4,W,fg).N(b~G,5!4,W,fg) -> N(b~C,3!1,W!5,fg!11).N(b~A,5!1,3!2,W!6,fg).N(b~G,5!2,W!7,fg!22).N(b~C,3!3,W!7,fg!22).N(b~T,5!3,3!4,W!6,fg).N(b~G,5!4,W!5,fg!11) k1
+
+N(b~C,3!1,W,fg).N(b~T,5!1,3!2,W,fg).N(b~A,5!2,W,fg) + N(b~T,3!3,W,fg).N(b~A,5!3,3!4,W,fg).N(b~G,5!4,W,fg) -> N(b~C,3!1,W!5,fg!11).N(b~T,5!1,3!2,W!6,fg).N(b~A,5!2,W!7,fg!22).N(b~T,3!3,W!7,fg!22).N(b~A,5!3,3!4,W!6,fg).N(b~G,5!4,W!5,fg!11) k1
+N(b~C,3!1,W,fg).N(b~T,5!1,3!2,W,fg).N(b~T,5!2,W,fg) + N(b~A,3!3,W,fg).N(b~A,5!3,3!4,W,fg).N(b~G,5!4,W,fg) -> N(b~C,3!1,W!5,fg!11).N(b~T,5!1,3!2,W!6,fg).N(b~T,5!2,W!7,fg!22).N(b~A,3!3,W!7,fg!22).N(b~A,5!3,3!4,W!6,fg).N(b~G,5!4,W!5,fg!11) k1
+N(b~C,3!1,W,fg).N(b~T,5!1,3!2,W,fg).N(b~C,5!2,W,fg) + N(b~G,3!3,W,fg).N(b~A,5!3,3!4,W,fg).N(b~G,5!4,W,fg) -> N(b~C,3!1,W!5,fg!11).N(b~T,5!1,3!2,W!6,fg).N(b~C,5!2,W!7,fg!22).N(b~G,3!3,W!7,fg!22).N(b~A,5!3,3!4,W!6,fg).N(b~G,5!4,W!5,fg!11) k1
+N(b~C,3!1,W,fg).N(b~T,5!1,3!2,W,fg).N(b~G,5!2,W,fg) + N(b~C,3!3,W,fg).N(b~A,5!3,3!4,W,fg).N(b~G,5!4,W,fg) -> N(b~C,3!1,W!5,fg!11).N(b~T,5!1,3!2,W!6,fg).N(b~G,5!2,W!7,fg!22).N(b~C,3!3,W!7,fg!22).N(b~A,5!3,3!4,W!6,fg).N(b~G,5!4,W!5,fg!11) k1
+
+N(b~C,3!1,W,fg).N(b~C,5!1,3!2,W,fg).N(b~A,5!2,W,fg) + N(b~T,3!3,W,fg).N(b~G,5!3,3!4,W,fg).N(b~G,5!4,W,fg) -> N(b~C,3!1,W!5,fg!11).N(b~C,5!1,3!2,W!6,fg).N(b~A,5!2,W!7,fg!22).N(b~T,3!3,W!7,fg!22).N(b~G,5!3,3!4,W!6,fg).N(b~G,5!4,W!5,fg!11) k1
+N(b~C,3!1,W,fg).N(b~C,5!1,3!2,W,fg).N(b~T,5!2,W,fg) + N(b~A,3!3,W,fg).N(b~G,5!3,3!4,W,fg).N(b~G,5!4,W,fg) -> N(b~C,3!1,W!5,fg!11).N(b~C,5!1,3!2,W!6,fg).N(b~T,5!2,W!7,fg!22).N(b~A,3!3,W!7,fg!22).N(b~G,5!3,3!4,W!6,fg).N(b~G,5!4,W!5,fg!11) k1
+N(b~C,3!1,W,fg).N(b~C,5!1,3!2,W,fg).N(b~C,5!2,W,fg) + N(b~G,3!3,W,fg).N(b~G,5!3,3!4,W,fg).N(b~G,5!4,W,fg) -> N(b~C,3!1,W!5,fg!11).N(b~C,5!1,3!2,W!6,fg).N(b~C,5!2,W!7,fg!22).N(b~G,3!3,W!7,fg!22).N(b~G,5!3,3!4,W!6,fg).N(b~G,5!4,W!5,fg!11) k1
+N(b~C,3!1,W,fg).N(b~C,5!1,3!2,W,fg).N(b~G,5!2,W,fg) + N(b~C,3!3,W,fg).N(b~G,5!3,3!4,W,fg).N(b~G,5!4,W,fg) -> N(b~C,3!1,W!5,fg!11).N(b~C,5!1,3!2,W!6,fg).N(b~G,5!2,W!7,fg!22).N(b~C,3!3,W!7,fg!22).N(b~G,5!3,3!4,W!6,fg).N(b~G,5!4,W!5,fg!11) k1
+
+N(b~C,3!1,W,fg).N(b~G,5!1,3!2,W,fg).N(b~A,5!2,W,fg) + N(b~T,3!3,W,fg).N(b~C,5!3,3!4,W,fg).N(b~G,5!4,W,fg) -> N(b~C,3!1,W!5,fg!11).N(b~G,5!1,3!2,W!6,fg).N(b~A,5!2,W!7,fg!22).N(b~T,3!3,W!7,fg!22).N(b~C,5!3,3!4,W!6,fg).N(b~G,5!4,W!5,fg!11) k1
+N(b~C,3!1,W,fg).N(b~G,5!1,3!2,W,fg).N(b~T,5!2,W,fg) + N(b~A,3!3,W,fg).N(b~C,5!3,3!4,W,fg).N(b~G,5!4,W,fg) -> N(b~C,3!1,W!5,fg!11).N(b~G,5!1,3!2,W!6,fg).N(b~T,5!2,W!7,fg!22).N(b~A,3!3,W!7,fg!22).N(b~C,5!3,3!4,W!6,fg).N(b~G,5!4,W!5,fg!11) k1
+N(b~C,3!1,W,fg).N(b~G,5!1,3!2,W,fg).N(b~C,5!2,W,fg) + N(b~G,3!3,W,fg).N(b~C,5!3,3!4,W,fg).N(b~G,5!4,W,fg) -> N(b~C,3!1,W!5,fg!11).N(b~G,5!1,3!2,W!6,fg).N(b~C,5!2,W!7,fg!22).N(b~G,3!3,W!7,fg!22).N(b~C,5!3,3!4,W!6,fg).N(b~G,5!4,W!5,fg!11) k1
+N(b~C,3!1,W,fg).N(b~G,5!1,3!2,W,fg).N(b~G,5!2,W,fg) + N(b~C,3!3,W,fg).N(b~C,5!3,3!4,W,fg).N(b~G,5!4,W,fg) -> N(b~C,3!1,W!5,fg!11).N(b~G,5!1,3!2,W!6,fg).N(b~G,5!2,W!7,fg!22).N(b~C,3!3,W!7,fg!22).N(b~C,5!3,3!4,W!6,fg).N(b~G,5!4,W!5,fg!11) k1
+
+
+
+N(b~G,3!1,W,fg).N(b~A,5!1,3!2,W,fg).N(b~A,5!2,W,fg) + N(b~T,3!3,W,fg).N(b~T,5!3,3!4,W,fg).N(b~C,5!4,W,fg) -> N(b~G,3!1,W!5,fg!11).N(b~A,5!1,3!2,W!6,fg).N(b~A,5!2,W!7,fg!22).N(b~T,3!3,W!7,fg!22).N(b~T,5!3,3!4,W!6,fg).N(b~C,5!4,W!5,fg!11) k1
+N(b~G,3!1,W,fg).N(b~A,5!1,3!2,W,fg).N(b~T,5!2,W,fg) + N(b~A,3!3,W,fg).N(b~T,5!3,3!4,W,fg).N(b~C,5!4,W,fg) -> N(b~G,3!1,W!5,fg!11).N(b~A,5!1,3!2,W!6,fg).N(b~T,5!2,W!7,fg!22).N(b~A,3!3,W!7,fg!22).N(b~T,5!3,3!4,W!6,fg).N(b~C,5!4,W!5,fg!11) k1
+N(b~G,3!1,W,fg).N(b~A,5!1,3!2,W,fg).N(b~C,5!2,W,fg) + N(b~G,3!3,W,fg).N(b~T,5!3,3!4,W,fg).N(b~C,5!4,W,fg) -> N(b~G,3!1,W!5,fg!11).N(b~A,5!1,3!2,W!6,fg).N(b~C,5!2,W!7,fg!22).N(b~G,3!3,W!7,fg!22).N(b~T,5!3,3!4,W!6,fg).N(b~C,5!4,W!5,fg!11) k1
+N(b~G,3!1,W,fg).N(b~A,5!1,3!2,W,fg).N(b~G,5!2,W,fg) + N(b~C,3!3,W,fg).N(b~T,5!3,3!4,W,fg).N(b~C,5!4,W,fg) -> N(b~G,3!1,W!5,fg!11).N(b~A,5!1,3!2,W!6,fg).N(b~G,5!2,W!7,fg!22).N(b~C,3!3,W!7,fg!22).N(b~T,5!3,3!4,W!6,fg).N(b~C,5!4,W!5,fg!11) k1
+
+N(b~G,3!1,W,fg).N(b~T,5!1,3!2,W,fg).N(b~A,5!2,W,fg) + N(b~T,3!3,W,fg).N(b~A,5!3,3!4,W,fg).N(b~C,5!4,W,fg) -> N(b~G,3!1,W!5,fg!11).N(b~T,5!1,3!2,W!6,fg).N(b~A,5!2,W!7,fg!22).N(b~T,3!3,W!7,fg!22).N(b~A,5!3,3!4,W!6,fg).N(b~C,5!4,W!5,fg!11) k1
+N(b~G,3!1,W,fg).N(b~T,5!1,3!2,W,fg).N(b~T,5!2,W,fg) + N(b~A,3!3,W,fg).N(b~A,5!3,3!4,W,fg).N(b~C,5!4,W,fg) -> N(b~G,3!1,W!5,fg!11).N(b~T,5!1,3!2,W!6,fg).N(b~T,5!2,W!7,fg!22).N(b~A,3!3,W!7,fg!22).N(b~A,5!3,3!4,W!6,fg).N(b~C,5!4,W!5,fg!11) k1
+N(b~G,3!1,W,fg).N(b~T,5!1,3!2,W,fg).N(b~C,5!2,W,fg) + N(b~G,3!3,W,fg).N(b~A,5!3,3!4,W,fg).N(b~C,5!4,W,fg) -> N(b~G,3!1,W!5,fg!11).N(b~T,5!1,3!2,W!6,fg).N(b~C,5!2,W!7,fg!22).N(b~G,3!3,W!7,fg!22).N(b~A,5!3,3!4,W!6,fg).N(b~C,5!4,W!5,fg!11) k1
+N(b~G,3!1,W,fg).N(b~T,5!1,3!2,W,fg).N(b~G,5!2,W,fg) + N(b~C,3!3,W,fg).N(b~A,5!3,3!4,W,fg).N(b~C,5!4,W,fg) -> N(b~G,3!1,W!5,fg!11).N(b~T,5!1,3!2,W!6,fg).N(b~G,5!2,W!7,fg!22).N(b~C,3!3,W!7,fg!22).N(b~A,5!3,3!4,W!6,fg).N(b~C,5!4,W!5,fg!11) k1
+
+N(b~G,3!1,W,fg).N(b~C,5!1,3!2,W,fg).N(b~A,5!2,W,fg) + N(b~T,3!3,W,fg).N(b~G,5!3,3!4,W,fg).N(b~C,5!4,W,fg) -> N(b~G,3!1,W!5,fg!11).N(b~C,5!1,3!2,W!6,fg).N(b~A,5!2,W!7,fg!22).N(b~T,3!3,W!7,fg!22).N(b~G,5!3,3!4,W!6,fg).N(b~C,5!4,W!5,fg!11) k1
+N(b~G,3!1,W,fg).N(b~C,5!1,3!2,W,fg).N(b~T,5!2,W,fg) + N(b~A,3!3,W,fg).N(b~G,5!3,3!4,W,fg).N(b~C,5!4,W,fg) -> N(b~G,3!1,W!5,fg!11).N(b~C,5!1,3!2,W!6,fg).N(b~T,5!2,W!7,fg!22).N(b~A,3!3,W!7,fg!22).N(b~G,5!3,3!4,W!6,fg).N(b~C,5!4,W!5,fg!11) k1
+N(b~G,3!1,W,fg).N(b~C,5!1,3!2,W,fg).N(b~C,5!2,W,fg) + N(b~G,3!3,W,fg).N(b~G,5!3,3!4,W,fg).N(b~C,5!4,W,fg) -> N(b~G,3!1,W!5,fg!11).N(b~C,5!1,3!2,W!6,fg).N(b~C,5!2,W!7,fg!22).N(b~G,3!3,W!7,fg!22).N(b~G,5!3,3!4,W!6,fg).N(b~C,5!4,W!5,fg!11) k1
+N(b~G,3!1,W,fg).N(b~C,5!1,3!2,W,fg).N(b~G,5!2,W,fg) + N(b~C,3!3,W,fg).N(b~G,5!3,3!4,W,fg).N(b~C,5!4,W,fg) -> N(b~G,3!1,W!5,fg!11).N(b~C,5!1,3!2,W!6,fg).N(b~G,5!2,W!7,fg!22).N(b~C,3!3,W!7,fg!22).N(b~G,5!3,3!4,W!6,fg).N(b~C,5!4,W!5,fg!11) k1
+
+N(b~G,3!1,W,fg).N(b~G,5!1,3!2,W,fg).N(b~A,5!2,W,fg) + N(b~T,3!3,W,fg).N(b~C,5!3,3!4,W,fg).N(b~C,5!4,W,fg) -> N(b~G,3!1,W!5,fg!11).N(b~G,5!1,3!2,W!6,fg).N(b~A,5!2,W!7,fg!22).N(b~T,3!3,W!7,fg!22).N(b~C,5!3,3!4,W!6,fg).N(b~C,5!4,W!5,fg!11) k1
+N(b~G,3!1,W,fg).N(b~G,5!1,3!2,W,fg).N(b~T,5!2,W,fg) + N(b~A,3!3,W,fg).N(b~C,5!3,3!4,W,fg).N(b~C,5!4,W,fg) -> N(b~G,3!1,W!5,fg!11).N(b~G,5!1,3!2,W!6,fg).N(b~T,5!2,W!7,fg!22).N(b~A,3!3,W!7,fg!22).N(b~C,5!3,3!4,W!6,fg).N(b~C,5!4,W!5,fg!11) k1
+N(b~G,3!1,W,fg).N(b~G,5!1,3!2,W,fg).N(b~C,5!2,W,fg) + N(b~G,3!3,W,fg).N(b~C,5!3,3!4,W,fg).N(b~C,5!4,W,fg) -> N(b~G,3!1,W!5,fg!11).N(b~G,5!1,3!2,W!6,fg).N(b~C,5!2,W!7,fg!22).N(b~G,3!3,W!7,fg!22).N(b~C,5!3,3!4,W!6,fg).N(b~C,5!4,W!5,fg!11) k1
+N(b~G,3!1,W,fg).N(b~G,5!1,3!2,W,fg).N(b~G,5!2,W,fg) + N(b~C,3!3,W,fg).N(b~C,5!3,3!4,W,fg).N(b~C,5!4,W,fg) -> N(b~G,3!1,W!5,fg!11).N(b~G,5!1,3!2,W!6,fg).N(b~G,5!2,W!7,fg!22).N(b~C,3!3,W!7,fg!22).N(b~C,5!3,3!4,W!6,fg).N(b~C,5!4,W!5,fg!11) k1
+
+
+# 14 very rapid prolongation of fg-bound complementary strand sequences with 1- or 2- complementary pairs of nucleotide, if they exist, or, if not (or for all other cases) removal of the fg-fg connection
+
+
+# prolongation reactions
+
+N(3!1,fg!22).N(b~A,5!1,W,fg).N(b~T,3!2,W,fg).N(5!2,fg!22) -> N(3!1,fg).N(b~A,5!1,W!6,fg).N(b~T,3!2,W!6,fg).N(5!2,fg) k_max
+N(3!1,fg!22).N(b~T,5!1,W,fg).N(b~A,3!2,W,fg).N(5!2,fg!22) -> N(3!1,fg).N(b~T,5!1,W!6,fg).N(b~A,3!2,W!6,fg).N(5!2,fg) k_max
+N(3!1,fg!22).N(b~C,5!1,W,fg).N(b~G,3!2,W,fg).N(5!2,fg!22) -> N(3!1,fg).N(b~C,5!1,W!6,fg).N(b~G,3!2,W!6,fg).N(5!2,fg) k_max
+N(3!1,fg!22).N(b~G,5!1,W,fg).N(b~C,3!2,W,fg).N(5!2,fg!22) -> N(3!1,fg).N(b~G,5!1,W!6,fg).N(b~C,3!2,W!6,fg).N(5!2,fg) k_max
+
+N(3!1,fg!22).N(b~A,5!1,3!2,W,fg).N(b~A,5!2,W,fg).N(b~T,3!3,W,fg).N(b~T,5!3,3!4,W,fg).N(5!4,fg!22) -> N(3!1,fg).N(b~A,5!1,3!2,W!5,fg).N(b~A,5!2,W!6,fg).N(b~T,3!3,W!6,fg).N(b~T,5!3,3!4,W!5,fg).N(5!4,fg) k_max
+N(3!1,fg!22).N(b~A,5!1,3!2,W,fg).N(b~T,5!2,W,fg).N(b~A,3!3,W,fg).N(b~T,5!3,3!4,W,fg).N(5!4,fg!22) -> N(3!1,fg).N(b~A,5!1,3!2,W!5,fg).N(b~T,5!2,W!6,fg).N(b~A,3!3,W!6,fg).N(b~T,5!3,3!4,W!5,fg).N(5!4,fg) k_max
+N(3!1,fg!22).N(b~A,5!1,3!2,W,fg).N(b~C,5!2,W,fg).N(b~G,3!3,W,fg).N(b~T,5!3,3!4,W,fg).N(5!4,fg!22) -> N(3!1,fg).N(b~A,5!1,3!2,W!5,fg).N(b~C,5!2,W!6,fg).N(b~G,3!3,W!6,fg).N(b~T,5!3,3!4,W!5,fg).N(5!4,fg) k_max
+N(3!1,fg!22).N(b~A,5!1,3!2,W,fg).N(b~G,5!2,W,fg).N(b~C,3!3,W,fg).N(b~T,5!3,3!4,W,fg).N(5!4,fg!22) -> N(3!1,fg).N(b~A,5!1,3!2,W!5,fg).N(b~G,5!2,W!6,fg).N(b~C,3!3,W!6,fg).N(b~T,5!3,3!4,W!5,fg).N(5!4,fg) k_max
+
+N(3!1,fg!22).N(b~T,5!1,3!2,W,fg).N(b~A,5!2,W,fg).N(b~T,3!3,W,fg).N(b~A,5!3,3!4,W,fg).N(5!4,fg!22) -> N(3!1,fg).N(b~T,5!1,3!2,W!5,fg).N(b~A,5!2,W!6,fg).N(b~T,3!3,W!6,fg).N(b~A,5!3,3!4,W!5,fg).N(5!4,fg) k_max
+N(3!1,fg!22).N(b~T,5!1,3!2,W,fg).N(b~T,5!2,W,fg).N(b~A,3!3,W,fg).N(b~A,5!3,3!4,W,fg).N(5!4,fg!22) -> N(3!1,fg).N(b~T,5!1,3!2,W!5,fg).N(b~T,5!2,W!6,fg).N(b~A,3!3,W!6,fg).N(b~A,5!3,3!4,W!5,fg).N(5!4,fg) k_max
+N(3!1,fg!22).N(b~T,5!1,3!2,W,fg).N(b~C,5!2,W,fg).N(b~G,3!3,W,fg).N(b~A,5!3,3!4,W,fg).N(5!4,fg!22) -> N(3!1,fg).N(b~T,5!1,3!2,W!5,fg).N(b~C,5!2,W!6,fg).N(b~G,3!3,W!6,fg).N(b~A,5!3,3!4,W!5,fg).N(5!4,fg) k_max
+N(3!1,fg!22).N(b~T,5!1,3!2,W,fg).N(b~G,5!2,W,fg).N(b~C,3!3,W,fg).N(b~A,5!3,3!4,W,fg).N(5!4,fg!22) -> N(3!1,fg).N(b~T,5!1,3!2,W!5,fg).N(b~G,5!2,W!6,fg).N(b~C,3!3,W!6,fg).N(b~A,5!3,3!4,W!5,fg).N(5!4,fg) k_max
+
+N(3!1,fg!22).N(b~C,5!1,3!2,W,fg).N(b~A,5!2,W,fg).N(b~T,3!3,W,fg).N(b~G,5!3,3!4,W,fg).N(5!4,fg!22) -> N(3!1,fg).N(b~C,5!1,3!2,W!5,fg).N(b~A,5!2,W!6,fg).N(b~T,3!3,W!6,fg).N(b~G,5!3,3!4,W!5,fg).N(5!4,fg) k_max
+N(3!1,fg!22).N(b~C,5!1,3!2,W,fg).N(b~T,5!2,W,fg).N(b~A,3!3,W,fg).N(b~G,5!3,3!4,W,fg).N(5!4,fg!22) -> N(3!1,fg).N(b~C,5!1,3!2,W!5,fg).N(b~T,5!2,W!6,fg).N(b~A,3!3,W!6,fg).N(b~G,5!3,3!4,W!5,fg).N(5!4,fg) k_max
+N(3!1,fg!22).N(b~C,5!1,3!2,W,fg).N(b~C,5!2,W,fg).N(b~G,3!3,W,fg).N(b~G,5!3,3!4,W,fg).N(5!4,fg!22) -> N(3!1,fg).N(b~C,5!1,3!2,W!5,fg).N(b~C,5!2,W!6,fg).N(b~G,3!3,W!6,fg).N(b~G,5!3,3!4,W!5,fg).N(5!4,fg) k_max
+N(3!1,fg!22).N(b~C,5!1,3!2,W,fg).N(b~G,5!2,W,fg).N(b~C,3!3,W,fg).N(b~G,5!3,3!4,W,fg).N(5!4,fg!22) -> N(3!1,fg).N(b~C,5!1,3!2,W!5,fg).N(b~G,5!2,W!6,fg).N(b~C,3!3,W!6,fg).N(b~G,5!3,3!4,W!5,fg).N(5!4,fg) k_max
+
+N(3!1,fg!22).N(b~G,5!1,3!2,W,fg).N(b~A,5!2,W,fg).N(b~T,3!3,W,fg).N(b~C,5!3,3!4,W,fg).N(5!4,fg!22) -> N(3!1,fg).N(b~G,5!1,3!2,W!5,fg).N(b~A,5!2,W!6,fg).N(b~T,3!3,W!6,fg).N(b~C,5!3,3!4,W!5,fg).N(5!4,fg) k_max
+N(3!1,fg!22).N(b~G,5!1,3!2,W,fg).N(b~T,5!2,W,fg).N(b~A,3!3,W,fg).N(b~C,5!3,3!4,W,fg).N(5!4,fg!22) -> N(3!1,fg).N(b~G,5!1,3!2,W!5,fg).N(b~T,5!2,W!6,fg).N(b~A,3!3,W!6,fg).N(b~C,5!3,3!4,W!5,fg).N(5!4,fg) k_max
+N(3!1,fg!22).N(b~G,5!1,3!2,W,fg).N(b~C,5!2,W,fg).N(b~G,3!3,W,fg).N(b~C,5!3,3!4,W,fg).N(5!4,fg!22) -> N(3!1,fg).N(b~G,5!1,3!2,W!5,fg).N(b~C,5!2,W!6,fg).N(b~G,3!3,W!6,fg).N(b~C,5!3,3!4,W!5,fg).N(5!4,fg) k_max
+N(3!1,fg!22).N(b~G,5!1,3!2,W,fg).N(b~G,5!2,W,fg).N(b~C,3!3,W,fg).N(b~C,5!3,3!4,W,fg).N(5!4,fg!22) -> N(3!1,fg).N(b~G,5!1,3!2,W!5,fg).N(b~G,5!2,W!6,fg).N(b~C,3!3,W!6,fg).N(b~C,5!3,3!4,W!5,fg).N(5!4,fg) k_max
+
+
+# removal of the fg-fg connection in all other cases (actually, removal of the fg-fg connection in all cases, but with a lower rate)
+
+N(fg!1).N(fg!1) -> N(fg).N(fg) k_med
+
+
+# 2. binding interaction between single complementary bases of two immediately-connected (immediate neighbor connection) ssDNA
+
+N(b~A,W,3!1,fg).N(5!1,W!2,fg).N(W!2,3!3,fg).N(5!3,W,b~T,fg)  -> N(b~A,W!4,3!1,fg).N(5!1,W!2,fg).N(W!2,3!3,fg).N(5!3,W!4,b~T,fg)  k2
+N(b~T,W,3!1,fg).N(5!1,W!2,fg).N(W!2,3!3,fg).N(5!3,W,b~A,fg)  -> N(b~T,W!4,3!1,fg).N(5!1,W!2,fg).N(W!2,3!3,fg).N(5!3,W!4,b~A,fg)  k2
+N(b~C,W,3!1,fg).N(5!1,W!2,fg).N(W!2,3!3,fg).N(5!3,W,b~G,fg)  -> N(b~C,W!4,3!1,fg).N(5!1,W!2,fg).N(W!2,3!3,fg).N(5!3,W!4,b~G,fg)  k2
+N(b~G,W,3!1,fg).N(5!1,W!2,fg).N(W!2,3!3,fg).N(5!3,W,b~C,fg)  -> N(b~G,W!4,3!1,fg).N(5!1,W!2,fg).N(W!2,3!3,fg).N(5!3,W!4,b~C,fg)  k2
+
+# 3. binding interaction between single complementary bases of two closely-connected (1-off neighbor connection,fg) ssDNA (possible to implement, if not too difficult)
+
+N(b~A,W,3!1,fg).N(5!1,3!5,fg).N(5!5,W!2,fg).N(W!2,3!3,fg).N(5!3,3!6,fg).N(5!6,W,b~T,fg) -> N(b~A,W!4,3!1,fg).N(5!1,3!5,fg).N(5!5,W!2,fg).N(W!2,3!3,fg).N(5!3,3!6,fg).N(5!6,W!4,b~T,fg) k3
+N(b~T,W,3!1,fg).N(5!1,3!5,fg).N(5!5,W!2,fg).N(W!2,3!3,fg).N(5!3,3!6,fg).N(5!6,W,b~A,fg) -> N(b~T,W!4,3!1,fg).N(5!1,3!5,fg).N(5!5,W!2,fg).N(W!2,3!3,fg).N(5!3,3!6,fg).N(5!6,W!4,b~A,fg) k3
+N(b~C,W,3!1,fg).N(5!1,3!5,fg).N(5!5,W!2,fg).N(W!2,3!3,fg).N(5!3,3!6,fg).N(5!6,W,b~G,fg) -> N(b~C,W!4,3!1,fg).N(5!1,3!5,fg).N(5!5,W!2,fg).N(W!2,3!3,fg).N(5!3,3!6,fg).N(5!6,W!4,b~G,fg) k3
+N(b~G,W,3!1,fg).N(5!1,3!5,fg).N(5!5,W!2,fg).N(W!2,3!3,fg).N(5!3,3!6,fg).N(5!6,W,b~C,fg) -> N(b~G,W!4,3!1,fg).N(5!1,3!5,fg).N(5!5,W!2,fg).N(W!2,3!3,fg).N(5!3,3!6,fg).N(5!6,W!4,b~C,fg) k3
+
+# 4. binding interaction between length-3 complementary segments bases of two (possibly far-)  connected ssDNA
+
+N(b~A,3!1,W,fg).N(b~A,5!1,3!2,W,fg).N(b~A,5!2,W,fg).N(b~T,3!3,W,fg).N(b~T,5!3,3!4,W,fg).N(b~T,5!4,W,fg) -> N(b~A,3!1,W!5,fg!11).N(b~A,5!1,3!2,W!6,fg).N(b~A,5!2,W!7,fg!22).N(b~T,3!3,W!7,fg!22).N(b~T,5!3,3!4,W!6,fg).N(b~T,5!4,W!5,fg!11) k4
+N(b~A,3!1,W,fg).N(b~A,5!1,3!2,W,fg).N(b~T,5!2,W,fg).N(b~A,3!3,W,fg).N(b~T,5!3,3!4,W,fg).N(b~T,5!4,W,fg) -> N(b~A,3!1,W!5,fg!11).N(b~A,5!1,3!2,W!6,fg).N(b~T,5!2,W!7,fg!22).N(b~A,3!3,W!7,fg!22).N(b~T,5!3,3!4,W!6,fg).N(b~T,5!4,W!5,fg!11) k4
+N(b~A,3!1,W,fg).N(b~A,5!1,3!2,W,fg).N(b~C,5!2,W,fg).N(b~G,3!3,W,fg).N(b~T,5!3,3!4,W,fg).N(b~T,5!4,W,fg) -> N(b~A,3!1,W!5,fg!11).N(b~A,5!1,3!2,W!6,fg).N(b~C,5!2,W!7,fg!22).N(b~G,3!3,W!7,fg!22).N(b~T,5!3,3!4,W!6,fg).N(b~T,5!4,W!5,fg!11) k4
+N(b~A,3!1,W,fg).N(b~A,5!1,3!2,W,fg).N(b~G,5!2,W,fg).N(b~C,3!3,W,fg).N(b~T,5!3,3!4,W,fg).N(b~T,5!4,W,fg) -> N(b~A,3!1,W!5,fg!11).N(b~A,5!1,3!2,W!6,fg).N(b~G,5!2,W!7,fg!22).N(b~C,3!3,W!7,fg!22).N(b~T,5!3,3!4,W!6,fg).N(b~T,5!4,W!5,fg!11) k4
+
+N(b~A,3!1,W,fg).N(b~T,5!1,3!2,W,fg).N(b~A,5!2,W,fg).N(b~T,3!3,W,fg).N(b~A,5!3,3!4,W,fg).N(b~T,5!4,W,fg) -> N(b~A,3!1,W!5,fg!11).N(b~T,5!1,3!2,W!6,fg).N(b~A,5!2,W!7,fg!22).N(b~T,3!3,W!7,fg!22).N(b~A,5!3,3!4,W!6,fg).N(b~T,5!4,W!5,fg!11) k4
+N(b~A,3!1,W,fg).N(b~T,5!1,3!2,W,fg).N(b~T,5!2,W,fg).N(b~A,3!3,W,fg).N(b~A,5!3,3!4,W,fg).N(b~T,5!4,W,fg) -> N(b~A,3!1,W!5,fg!11).N(b~T,5!1,3!2,W!6,fg).N(b~T,5!2,W!7,fg!22).N(b~A,3!3,W!7,fg!22).N(b~A,5!3,3!4,W!6,fg).N(b~T,5!4,W!5,fg!11) k4
+N(b~A,3!1,W,fg).N(b~T,5!1,3!2,W,fg).N(b~C,5!2,W,fg).N(b~G,3!3,W,fg).N(b~A,5!3,3!4,W,fg).N(b~T,5!4,W,fg) -> N(b~A,3!1,W!5,fg!11).N(b~T,5!1,3!2,W!6,fg).N(b~C,5!2,W!7,fg!22).N(b~G,3!3,W!7,fg!22).N(b~A,5!3,3!4,W!6,fg).N(b~T,5!4,W!5,fg!11) k4
+N(b~A,3!1,W,fg).N(b~T,5!1,3!2,W,fg).N(b~G,5!2,W,fg).N(b~C,3!3,W,fg).N(b~A,5!3,3!4,W,fg).N(b~T,5!4,W,fg) -> N(b~A,3!1,W!5,fg!11).N(b~T,5!1,3!2,W!6,fg).N(b~G,5!2,W!7,fg!22).N(b~C,3!3,W!7,fg!22).N(b~A,5!3,3!4,W!6,fg).N(b~T,5!4,W!5,fg!11) k4
+
+N(b~A,3!1,W,fg).N(b~C,5!1,3!2,W,fg).N(b~A,5!2,W,fg).N(b~T,3!3,W,fg).N(b~G,5!3,3!4,W,fg).N(b~T,5!4,W,fg) -> N(b~A,3!1,W!5,fg!11).N(b~C,5!1,3!2,W!6,fg).N(b~A,5!2,W!7,fg!22).N(b~T,3!3,W!7,fg!22).N(b~G,5!3,3!4,W!6,fg).N(b~T,5!4,W!5,fg!11) k4
+N(b~A,3!1,W,fg).N(b~C,5!1,3!2,W,fg).N(b~T,5!2,W,fg).N(b~A,3!3,W,fg).N(b~G,5!3,3!4,W,fg).N(b~T,5!4,W,fg) -> N(b~A,3!1,W!5,fg!11).N(b~C,5!1,3!2,W!6,fg).N(b~T,5!2,W!7,fg!22).N(b~A,3!3,W!7,fg!22).N(b~G,5!3,3!4,W!6,fg).N(b~T,5!4,W!5,fg!11) k4
+N(b~A,3!1,W,fg).N(b~C,5!1,3!2,W,fg).N(b~C,5!2,W,fg).N(b~G,3!3,W,fg).N(b~G,5!3,3!4,W,fg).N(b~T,5!4,W,fg) -> N(b~A,3!1,W!5,fg!11).N(b~C,5!1,3!2,W!6,fg).N(b~C,5!2,W!7,fg!22).N(b~G,3!3,W!7,fg!22).N(b~G,5!3,3!4,W!6,fg).N(b~T,5!4,W!5,fg!11) k4
+N(b~A,3!1,W,fg).N(b~C,5!1,3!2,W,fg).N(b~G,5!2,W,fg).N(b~C,3!3,W,fg).N(b~G,5!3,3!4,W,fg).N(b~T,5!4,W,fg) -> N(b~A,3!1,W!5,fg!11).N(b~C,5!1,3!2,W!6,fg).N(b~G,5!2,W!7,fg!22).N(b~C,3!3,W!7,fg!22).N(b~G,5!3,3!4,W!6,fg).N(b~T,5!4,W!5,fg!11) k4
+
+N(b~A,3!1,W,fg).N(b~G,5!1,3!2,W,fg).N(b~A,5!2,W,fg).N(b~T,3!3,W,fg).N(b~C,5!3,3!4,W,fg).N(b~T,5!4,W,fg) -> N(b~A,3!1,W!5,fg!11).N(b~G,5!1,3!2,W!6,fg).N(b~A,5!2,W!7,fg!22).N(b~T,3!3,W!7,fg!22).N(b~C,5!3,3!4,W!6,fg).N(b~T,5!4,W!5,fg!11) k4
+N(b~A,3!1,W,fg).N(b~G,5!1,3!2,W,fg).N(b~T,5!2,W,fg).N(b~A,3!3,W,fg).N(b~C,5!3,3!4,W,fg).N(b~T,5!4,W,fg) -> N(b~A,3!1,W!5,fg!11).N(b~G,5!1,3!2,W!6,fg).N(b~T,5!2,W!7,fg!22).N(b~A,3!3,W!7,fg!22).N(b~C,5!3,3!4,W!6,fg).N(b~T,5!4,W!5,fg!11) k4
+N(b~A,3!1,W,fg).N(b~G,5!1,3!2,W,fg).N(b~C,5!2,W,fg).N(b~G,3!3,W,fg).N(b~C,5!3,3!4,W,fg).N(b~T,5!4,W,fg) -> N(b~A,3!1,W!5,fg!11).N(b~G,5!1,3!2,W!6,fg).N(b~C,5!2,W!7,fg!22).N(b~G,3!3,W!7,fg!22).N(b~C,5!3,3!4,W!6,fg).N(b~T,5!4,W!5,fg!11) k4
+N(b~A,3!1,W,fg).N(b~G,5!1,3!2,W,fg).N(b~G,5!2,W,fg).N(b~C,3!3,W,fg).N(b~C,5!3,3!4,W,fg).N(b~T,5!4,W,fg) -> N(b~A,3!1,W!5,fg!11).N(b~G,5!1,3!2,W!6,fg).N(b~G,5!2,W!7,fg!22).N(b~C,3!3,W!7,fg!22).N(b~C,5!3,3!4,W!6,fg).N(b~T,5!4,W!5,fg!11) k4
+
+
+
+N(b~T,3!1,W,fg).N(b~A,5!1,3!2,W,fg).N(b~A,5!2,W,fg).N(b~T,3!3,W,fg).N(b~T,5!3,3!4,W,fg).N(b~A,5!4,W,fg) -> N(b~T,3!1,W!5,fg!11).N(b~A,5!1,3!2,W!6,fg).N(b~A,5!2,W!7,fg!22).N(b~T,3!3,W!7,fg!22).N(b~T,5!3,3!4,W!6,fg).N(b~A,5!4,W!5,fg!11) k4
+N(b~T,3!1,W,fg).N(b~A,5!1,3!2,W,fg).N(b~T,5!2,W,fg).N(b~A,3!3,W,fg).N(b~T,5!3,3!4,W,fg).N(b~A,5!4,W,fg) -> N(b~T,3!1,W!5,fg!11).N(b~A,5!1,3!2,W!6,fg).N(b~T,5!2,W!7,fg!22).N(b~A,3!3,W!7,fg!22).N(b~T,5!3,3!4,W!6,fg).N(b~A,5!4,W!5,fg!11) k4
+N(b~T,3!1,W,fg).N(b~A,5!1,3!2,W,fg).N(b~C,5!2,W,fg).N(b~G,3!3,W,fg).N(b~T,5!3,3!4,W,fg).N(b~A,5!4,W,fg) -> N(b~T,3!1,W!5,fg!11).N(b~A,5!1,3!2,W!6,fg).N(b~C,5!2,W!7,fg!22).N(b~G,3!3,W!7,fg!22).N(b~T,5!3,3!4,W!6,fg).N(b~A,5!4,W!5,fg!11) k4
+N(b~T,3!1,W,fg).N(b~A,5!1,3!2,W,fg).N(b~G,5!2,W,fg).N(b~C,3!3,W,fg).N(b~T,5!3,3!4,W,fg).N(b~A,5!4,W,fg) -> N(b~T,3!1,W!5,fg!11).N(b~A,5!1,3!2,W!6,fg).N(b~G,5!2,W!7,fg!22).N(b~C,3!3,W!7,fg!22).N(b~T,5!3,3!4,W!6,fg).N(b~A,5!4,W!5,fg!11) k4
+
+N(b~T,3!1,W,fg).N(b~T,5!1,3!2,W,fg).N(b~A,5!2,W,fg).N(b~T,3!3,W,fg).N(b~A,5!3,3!4,W,fg).N(b~A,5!4,W,fg) -> N(b~T,3!1,W!5,fg!11).N(b~T,5!1,3!2,W!6,fg).N(b~A,5!2,W!7,fg!22).N(b~T,3!3,W!7,fg!22).N(b~A,5!3,3!4,W!6,fg).N(b~A,5!4,W!5,fg!11) k4
+N(b~T,3!1,W,fg).N(b~T,5!1,3!2,W,fg).N(b~T,5!2,W,fg).N(b~A,3!3,W,fg).N(b~A,5!3,3!4,W,fg).N(b~A,5!4,W,fg) -> N(b~T,3!1,W!5,fg!11).N(b~T,5!1,3!2,W!6,fg).N(b~T,5!2,W!7,fg!22).N(b~A,3!3,W!7,fg!22).N(b~A,5!3,3!4,W!6,fg).N(b~A,5!4,W!5,fg!11) k4
+N(b~T,3!1,W,fg).N(b~T,5!1,3!2,W,fg).N(b~C,5!2,W,fg).N(b~G,3!3,W,fg).N(b~A,5!3,3!4,W,fg).N(b~A,5!4,W,fg) -> N(b~T,3!1,W!5,fg!11).N(b~T,5!1,3!2,W!6,fg).N(b~C,5!2,W!7,fg!22).N(b~G,3!3,W!7,fg!22).N(b~A,5!3,3!4,W!6,fg).N(b~A,5!4,W!5,fg!11) k4
+N(b~T,3!1,W,fg).N(b~T,5!1,3!2,W,fg).N(b~G,5!2,W,fg).N(b~C,3!3,W,fg).N(b~A,5!3,3!4,W,fg).N(b~A,5!4,W,fg) -> N(b~T,3!1,W!5,fg!11).N(b~T,5!1,3!2,W!6,fg).N(b~G,5!2,W!7,fg!22).N(b~C,3!3,W!7,fg!22).N(b~A,5!3,3!4,W!6,fg).N(b~A,5!4,W!5,fg!11) k4
+
+N(b~T,3!1,W,fg).N(b~C,5!1,3!2,W,fg).N(b~A,5!2,W,fg).N(b~T,3!3,W,fg).N(b~G,5!3,3!4,W,fg).N(b~A,5!4,W,fg) -> N(b~T,3!1,W!5,fg!11).N(b~C,5!1,3!2,W!6,fg).N(b~A,5!2,W!7,fg!22).N(b~T,3!3,W!7,fg!22).N(b~G,5!3,3!4,W!6,fg).N(b~A,5!4,W!5,fg!11) k4
+N(b~T,3!1,W,fg).N(b~C,5!1,3!2,W,fg).N(b~T,5!2,W,fg).N(b~A,3!3,W,fg).N(b~G,5!3,3!4,W,fg).N(b~A,5!4,W,fg) -> N(b~T,3!1,W!5,fg!11).N(b~C,5!1,3!2,W!6,fg).N(b~T,5!2,W!7,fg!22).N(b~A,3!3,W!7,fg!22).N(b~G,5!3,3!4,W!6,fg).N(b~A,5!4,W!5,fg!11) k4
+N(b~T,3!1,W,fg).N(b~C,5!1,3!2,W,fg).N(b~C,5!2,W,fg).N(b~G,3!3,W,fg).N(b~G,5!3,3!4,W,fg).N(b~A,5!4,W,fg) -> N(b~T,3!1,W!5,fg!11).N(b~C,5!1,3!2,W!6,fg).N(b~C,5!2,W!7,fg!22).N(b~G,3!3,W!7,fg!22).N(b~G,5!3,3!4,W!6,fg).N(b~A,5!4,W!5,fg!11) k4
+N(b~T,3!1,W,fg).N(b~C,5!1,3!2,W,fg).N(b~G,5!2,W,fg).N(b~C,3!3,W,fg).N(b~G,5!3,3!4,W,fg).N(b~A,5!4,W,fg) -> N(b~T,3!1,W!5,fg!11).N(b~C,5!1,3!2,W!6,fg).N(b~G,5!2,W!7,fg!22).N(b~C,3!3,W!7,fg!22).N(b~G,5!3,3!4,W!6,fg).N(b~A,5!4,W!5,fg!11) k4
+
+N(b~T,3!1,W,fg).N(b~G,5!1,3!2,W,fg).N(b~A,5!2,W,fg).N(b~T,3!3,W,fg).N(b~C,5!3,3!4,W,fg).N(b~A,5!4,W,fg) -> N(b~T,3!1,W!5,fg!11).N(b~G,5!1,3!2,W!6,fg).N(b~A,5!2,W!7,fg!22).N(b~T,3!3,W!7,fg!22).N(b~C,5!3,3!4,W!6,fg).N(b~A,5!4,W!5,fg!11) k4
+N(b~T,3!1,W,fg).N(b~G,5!1,3!2,W,fg).N(b~T,5!2,W,fg).N(b~A,3!3,W,fg).N(b~C,5!3,3!4,W,fg).N(b~A,5!4,W,fg) -> N(b~T,3!1,W!5,fg!11).N(b~G,5!1,3!2,W!6,fg).N(b~T,5!2,W!7,fg!22).N(b~A,3!3,W!7,fg!22).N(b~C,5!3,3!4,W!6,fg).N(b~A,5!4,W!5,fg!11) k4
+N(b~T,3!1,W,fg).N(b~G,5!1,3!2,W,fg).N(b~C,5!2,W,fg).N(b~G,3!3,W,fg).N(b~C,5!3,3!4,W,fg).N(b~A,5!4,W,fg) -> N(b~T,3!1,W!5,fg!11).N(b~G,5!1,3!2,W!6,fg).N(b~C,5!2,W!7,fg!22).N(b~G,3!3,W!7,fg!22).N(b~C,5!3,3!4,W!6,fg).N(b~A,5!4,W!5,fg!11) k4
+N(b~T,3!1,W,fg).N(b~G,5!1,3!2,W,fg).N(b~G,5!2,W,fg).N(b~C,3!3,W,fg).N(b~C,5!3,3!4,W,fg).N(b~A,5!4,W,fg) -> N(b~T,3!1,W!5,fg!11).N(b~G,5!1,3!2,W!6,fg).N(b~G,5!2,W!7,fg!22).N(b~C,3!3,W!7,fg!22).N(b~C,5!3,3!4,W!6,fg).N(b~A,5!4,W!5,fg!11) k4
+
+
+
+N(b~C,3!1,W,fg).N(b~A,5!1,3!2,W,fg).N(b~A,5!2,W,fg).N(b~T,3!3,W,fg).N(b~T,5!3,3!4,W,fg).N(b~G,5!4,W,fg) -> N(b~C,3!1,W!5,fg!11).N(b~A,5!1,3!2,W!6,fg).N(b~A,5!2,W!7,fg!22).N(b~T,3!3,W!7,fg!22).N(b~T,5!3,3!4,W!6,fg).N(b~G,5!4,W!5,fg!11) k4
+N(b~C,3!1,W,fg).N(b~A,5!1,3!2,W,fg).N(b~T,5!2,W,fg).N(b~A,3!3,W,fg).N(b~T,5!3,3!4,W,fg).N(b~G,5!4,W,fg) -> N(b~C,3!1,W!5,fg!11).N(b~A,5!1,3!2,W!6,fg).N(b~T,5!2,W!7,fg!22).N(b~A,3!3,W!7,fg!22).N(b~T,5!3,3!4,W!6,fg).N(b~G,5!4,W!5,fg!11) k4
+N(b~C,3!1,W,fg).N(b~A,5!1,3!2,W,fg).N(b~C,5!2,W,fg).N(b~G,3!3,W,fg).N(b~T,5!3,3!4,W,fg).N(b~G,5!4,W,fg) -> N(b~C,3!1,W!5,fg!11).N(b~A,5!1,3!2,W!6,fg).N(b~C,5!2,W!7,fg!22).N(b~G,3!3,W!7,fg!22).N(b~T,5!3,3!4,W!6,fg).N(b~G,5!4,W!5,fg!11) k4
+N(b~C,3!1,W,fg).N(b~A,5!1,3!2,W,fg).N(b~G,5!2,W,fg).N(b~C,3!3,W,fg).N(b~T,5!3,3!4,W,fg).N(b~G,5!4,W,fg) -> N(b~C,3!1,W!5,fg!11).N(b~A,5!1,3!2,W!6,fg).N(b~G,5!2,W!7,fg!22).N(b~C,3!3,W!7,fg!22).N(b~T,5!3,3!4,W!6,fg).N(b~G,5!4,W!5,fg!11) k4
+
+N(b~C,3!1,W,fg).N(b~T,5!1,3!2,W,fg).N(b~A,5!2,W,fg).N(b~T,3!3,W,fg).N(b~A,5!3,3!4,W,fg).N(b~G,5!4,W,fg) -> N(b~C,3!1,W!5,fg!11).N(b~T,5!1,3!2,W!6,fg).N(b~A,5!2,W!7,fg!22).N(b~T,3!3,W!7,fg!22).N(b~A,5!3,3!4,W!6,fg).N(b~G,5!4,W!5,fg!11) k4
+N(b~C,3!1,W,fg).N(b~T,5!1,3!2,W,fg).N(b~T,5!2,W,fg).N(b~A,3!3,W,fg).N(b~A,5!3,3!4,W,fg).N(b~G,5!4,W,fg) -> N(b~C,3!1,W!5,fg!11).N(b~T,5!1,3!2,W!6,fg).N(b~T,5!2,W!7,fg!22).N(b~A,3!3,W!7,fg!22).N(b~A,5!3,3!4,W!6,fg).N(b~G,5!4,W!5,fg!11) k4
+N(b~C,3!1,W,fg).N(b~T,5!1,3!2,W,fg).N(b~C,5!2,W,fg).N(b~G,3!3,W,fg).N(b~A,5!3,3!4,W,fg).N(b~G,5!4,W,fg) -> N(b~C,3!1,W!5,fg!11).N(b~T,5!1,3!2,W!6,fg).N(b~C,5!2,W!7,fg!22).N(b~G,3!3,W!7,fg!22).N(b~A,5!3,3!4,W!6,fg).N(b~G,5!4,W!5,fg!11) k4
+N(b~C,3!1,W,fg).N(b~T,5!1,3!2,W,fg).N(b~G,5!2,W,fg).N(b~C,3!3,W,fg).N(b~A,5!3,3!4,W,fg).N(b~G,5!4,W,fg) -> N(b~C,3!1,W!5,fg!11).N(b~T,5!1,3!2,W!6,fg).N(b~G,5!2,W!7,fg!22).N(b~C,3!3,W!7,fg!22).N(b~A,5!3,3!4,W!6,fg).N(b~G,5!4,W!5,fg!11) k4
+
+N(b~C,3!1,W,fg).N(b~C,5!1,3!2,W,fg).N(b~A,5!2,W,fg).N(b~T,3!3,W,fg).N(b~G,5!3,3!4,W,fg).N(b~G,5!4,W,fg) -> N(b~C,3!1,W!5,fg!11).N(b~C,5!1,3!2,W!6,fg).N(b~A,5!2,W!7,fg!22).N(b~T,3!3,W!7,fg!22).N(b~G,5!3,3!4,W!6,fg).N(b~G,5!4,W!5,fg!11) k4
+N(b~C,3!1,W,fg).N(b~C,5!1,3!2,W,fg).N(b~T,5!2,W,fg).N(b~A,3!3,W,fg).N(b~G,5!3,3!4,W,fg).N(b~G,5!4,W,fg) -> N(b~C,3!1,W!5,fg!11).N(b~C,5!1,3!2,W!6,fg).N(b~T,5!2,W!7,fg!22).N(b~A,3!3,W!7,fg!22).N(b~G,5!3,3!4,W!6,fg).N(b~G,5!4,W!5,fg!11) k4
+N(b~C,3!1,W,fg).N(b~C,5!1,3!2,W,fg).N(b~C,5!2,W,fg).N(b~G,3!3,W,fg).N(b~G,5!3,3!4,W,fg).N(b~G,5!4,W,fg) -> N(b~C,3!1,W!5,fg!11).N(b~C,5!1,3!2,W!6,fg).N(b~C,5!2,W!7,fg!22).N(b~G,3!3,W!7,fg!22).N(b~G,5!3,3!4,W!6,fg).N(b~G,5!4,W!5,fg!11) k4
+N(b~C,3!1,W,fg).N(b~C,5!1,3!2,W,fg).N(b~G,5!2,W,fg).N(b~C,3!3,W,fg).N(b~G,5!3,3!4,W,fg).N(b~G,5!4,W,fg) -> N(b~C,3!1,W!5,fg!11).N(b~C,5!1,3!2,W!6,fg).N(b~G,5!2,W!7,fg!22).N(b~C,3!3,W!7,fg!22).N(b~G,5!3,3!4,W!6,fg).N(b~G,5!4,W!5,fg!11) k4
+
+N(b~C,3!1,W,fg).N(b~G,5!1,3!2,W,fg).N(b~A,5!2,W,fg).N(b~T,3!3,W,fg).N(b~C,5!3,3!4,W,fg).N(b~G,5!4,W,fg) -> N(b~C,3!1,W!5,fg!11).N(b~G,5!1,3!2,W!6,fg).N(b~A,5!2,W!7,fg!22).N(b~T,3!3,W!7,fg!22).N(b~C,5!3,3!4,W!6,fg).N(b~G,5!4,W!5,fg!11) k4
+N(b~C,3!1,W,fg).N(b~G,5!1,3!2,W,fg).N(b~T,5!2,W,fg).N(b~A,3!3,W,fg).N(b~C,5!3,3!4,W,fg).N(b~G,5!4,W,fg) -> N(b~C,3!1,W!5,fg!11).N(b~G,5!1,3!2,W!6,fg).N(b~T,5!2,W!7,fg!22).N(b~A,3!3,W!7,fg!22).N(b~C,5!3,3!4,W!6,fg).N(b~G,5!4,W!5,fg!11) k4
+N(b~C,3!1,W,fg).N(b~G,5!1,3!2,W,fg).N(b~C,5!2,W,fg).N(b~G,3!3,W,fg).N(b~C,5!3,3!4,W,fg).N(b~G,5!4,W,fg) -> N(b~C,3!1,W!5,fg!11).N(b~G,5!1,3!2,W!6,fg).N(b~C,5!2,W!7,fg!22).N(b~G,3!3,W!7,fg!22).N(b~C,5!3,3!4,W!6,fg).N(b~G,5!4,W!5,fg!11) k4
+N(b~C,3!1,W,fg).N(b~G,5!1,3!2,W,fg).N(b~G,5!2,W,fg).N(b~C,3!3,W,fg).N(b~C,5!3,3!4,W,fg).N(b~G,5!4,W,fg) -> N(b~C,3!1,W!5,fg!11).N(b~G,5!1,3!2,W!6,fg).N(b~G,5!2,W!7,fg!22).N(b~C,3!3,W!7,fg!22).N(b~C,5!3,3!4,W!6,fg).N(b~G,5!4,W!5,fg!11) k4
+
+
+
+N(b~G,3!1,W,fg).N(b~A,5!1,3!2,W,fg).N(b~A,5!2,W,fg).N(b~T,3!3,W,fg).N(b~T,5!3,3!4,W,fg).N(b~C,5!4,W,fg) -> N(b~G,3!1,W!5,fg!11).N(b~A,5!1,3!2,W!6,fg).N(b~A,5!2,W!7,fg!22).N(b~T,3!3,W!7,fg!22).N(b~T,5!3,3!4,W!6,fg).N(b~C,5!4,W!5,fg!11) k4
+N(b~G,3!1,W,fg).N(b~A,5!1,3!2,W,fg).N(b~T,5!2,W,fg).N(b~A,3!3,W,fg).N(b~T,5!3,3!4,W,fg).N(b~C,5!4,W,fg) -> N(b~G,3!1,W!5,fg!11).N(b~A,5!1,3!2,W!6,fg).N(b~T,5!2,W!7,fg!22).N(b~A,3!3,W!7,fg!22).N(b~T,5!3,3!4,W!6,fg).N(b~C,5!4,W!5,fg!11) k4
+N(b~G,3!1,W,fg).N(b~A,5!1,3!2,W,fg).N(b~C,5!2,W,fg).N(b~G,3!3,W,fg).N(b~T,5!3,3!4,W,fg).N(b~C,5!4,W,fg) -> N(b~G,3!1,W!5,fg!11).N(b~A,5!1,3!2,W!6,fg).N(b~C,5!2,W!7,fg!22).N(b~G,3!3,W!7,fg!22).N(b~T,5!3,3!4,W!6,fg).N(b~C,5!4,W!5,fg!11) k4
+N(b~G,3!1,W,fg).N(b~A,5!1,3!2,W,fg).N(b~G,5!2,W,fg).N(b~C,3!3,W,fg).N(b~T,5!3,3!4,W,fg).N(b~C,5!4,W,fg) -> N(b~G,3!1,W!5,fg!11).N(b~A,5!1,3!2,W!6,fg).N(b~G,5!2,W!7,fg!22).N(b~C,3!3,W!7,fg!22).N(b~T,5!3,3!4,W!6,fg).N(b~C,5!4,W!5,fg!11) k4
+
+N(b~G,3!1,W,fg).N(b~T,5!1,3!2,W,fg).N(b~A,5!2,W,fg).N(b~T,3!3,W,fg).N(b~A,5!3,3!4,W,fg).N(b~C,5!4,W,fg) -> N(b~G,3!1,W!5,fg!11).N(b~T,5!1,3!2,W!6,fg).N(b~A,5!2,W!7,fg!22).N(b~T,3!3,W!7,fg!22).N(b~A,5!3,3!4,W!6,fg).N(b~C,5!4,W!5,fg!11) k4
+N(b~G,3!1,W,fg).N(b~T,5!1,3!2,W,fg).N(b~T,5!2,W,fg).N(b~A,3!3,W,fg).N(b~A,5!3,3!4,W,fg).N(b~C,5!4,W,fg) -> N(b~G,3!1,W!5,fg!11).N(b~T,5!1,3!2,W!6,fg).N(b~T,5!2,W!7,fg!22).N(b~A,3!3,W!7,fg!22).N(b~A,5!3,3!4,W!6,fg).N(b~C,5!4,W!5,fg!11) k4
+N(b~G,3!1,W,fg).N(b~T,5!1,3!2,W,fg).N(b~C,5!2,W,fg).N(b~G,3!3,W,fg).N(b~A,5!3,3!4,W,fg).N(b~C,5!4,W,fg) -> N(b~G,3!1,W!5,fg!11).N(b~T,5!1,3!2,W!6,fg).N(b~C,5!2,W!7,fg!22).N(b~G,3!3,W!7,fg!22).N(b~A,5!3,3!4,W!6,fg).N(b~C,5!4,W!5,fg!11) k4
+N(b~G,3!1,W,fg).N(b~T,5!1,3!2,W,fg).N(b~G,5!2,W,fg).N(b~C,3!3,W,fg).N(b~A,5!3,3!4,W,fg).N(b~C,5!4,W,fg) -> N(b~G,3!1,W!5,fg!11).N(b~T,5!1,3!2,W!6,fg).N(b~G,5!2,W!7,fg!22).N(b~C,3!3,W!7,fg!22).N(b~A,5!3,3!4,W!6,fg).N(b~C,5!4,W!5,fg!11) k4
+
+N(b~G,3!1,W,fg).N(b~C,5!1,3!2,W,fg).N(b~A,5!2,W,fg).N(b~T,3!3,W,fg).N(b~G,5!3,3!4,W,fg).N(b~C,5!4,W,fg) -> N(b~G,3!1,W!5,fg!11).N(b~C,5!1,3!2,W!6,fg).N(b~A,5!2,W!7,fg!22).N(b~T,3!3,W!7,fg!22).N(b~G,5!3,3!4,W!6,fg).N(b~C,5!4,W!5,fg!11) k4
+N(b~G,3!1,W,fg).N(b~C,5!1,3!2,W,fg).N(b~T,5!2,W,fg).N(b~A,3!3,W,fg).N(b~G,5!3,3!4,W,fg).N(b~C,5!4,W,fg) -> N(b~G,3!1,W!5,fg!11).N(b~C,5!1,3!2,W!6,fg).N(b~T,5!2,W!7,fg!22).N(b~A,3!3,W!7,fg!22).N(b~G,5!3,3!4,W!6,fg).N(b~C,5!4,W!5,fg!11) k4
+N(b~G,3!1,W,fg).N(b~C,5!1,3!2,W,fg).N(b~C,5!2,W,fg).N(b~G,3!3,W,fg).N(b~G,5!3,3!4,W,fg).N(b~C,5!4,W,fg) -> N(b~G,3!1,W!5,fg!11).N(b~C,5!1,3!2,W!6,fg).N(b~C,5!2,W!7,fg!22).N(b~G,3!3,W!7,fg!22).N(b~G,5!3,3!4,W!6,fg).N(b~C,5!4,W!5,fg!11) k4
+N(b~G,3!1,W,fg).N(b~C,5!1,3!2,W,fg).N(b~G,5!2,W,fg).N(b~C,3!3,W,fg).N(b~G,5!3,3!4,W,fg).N(b~C,5!4,W,fg) -> N(b~G,3!1,W!5,fg!11).N(b~C,5!1,3!2,W!6,fg).N(b~G,5!2,W!7,fg!22).N(b~C,3!3,W!7,fg!22).N(b~G,5!3,3!4,W!6,fg).N(b~C,5!4,W!5,fg!11) k4
+
+N(b~G,3!1,W,fg).N(b~G,5!1,3!2,W,fg).N(b~A,5!2,W,fg).N(b~T,3!3,W,fg).N(b~C,5!3,3!4,W,fg).N(b~C,5!4,W,fg) -> N(b~G,3!1,W!5,fg!11).N(b~G,5!1,3!2,W!6,fg).N(b~A,5!2,W!7,fg!22).N(b~T,3!3,W!7,fg!22).N(b~C,5!3,3!4,W!6,fg).N(b~C,5!4,W!5,fg!11) k4
+N(b~G,3!1,W,fg).N(b~G,5!1,3!2,W,fg).N(b~T,5!2,W,fg).N(b~A,3!3,W,fg).N(b~C,5!3,3!4,W,fg).N(b~C,5!4,W,fg) -> N(b~G,3!1,W!5,fg!11).N(b~G,5!1,3!2,W!6,fg).N(b~T,5!2,W!7,fg!22).N(b~A,3!3,W!7,fg!22).N(b~C,5!3,3!4,W!6,fg).N(b~C,5!4,W!5,fg!11) k4
+N(b~G,3!1,W,fg).N(b~G,5!1,3!2,W,fg).N(b~C,5!2,W,fg).N(b~G,3!3,W,fg).N(b~C,5!3,3!4,W,fg).N(b~C,5!4,W,fg) -> N(b~G,3!1,W!5,fg!11).N(b~G,5!1,3!2,W!6,fg).N(b~C,5!2,W!7,fg!22).N(b~G,3!3,W!7,fg!22).N(b~C,5!3,3!4,W!6,fg).N(b~C,5!4,W!5,fg!11) k4
+N(b~G,3!1,W,fg).N(b~G,5!1,3!2,W,fg).N(b~G,5!2,W,fg).N(b~C,3!3,W,fg).N(b~C,5!3,3!4,W,fg).N(b~C,5!4,W,fg) -> N(b~G,3!1,W!5,fg!11).N(b~G,5!1,3!2,W!6,fg).N(b~G,5!2,W!7,fg!22).N(b~C,3!3,W!7,fg!22).N(b~C,5!3,3!4,W!6,fg).N(b~C,5!4,W!5,fg!11) k4
+
+
+# 5. un-binding between complementary bases positioned at a split (i.e. both ssDNA strands, s1 top and s2 bottom, continue with pairwise non-bounded sequences)
+# Case 1: the left side of the top strand is not connected to another strand
+
+N(3!1,W,fg).N(5!1,3!2,W!5,fg).N(5!2,W!6,fg).N(3!3,W!6,fg).N(5!3,3!4,W!5,fg).N(5!4,fg) -> N(3!1,W,fg).N(5!1,3!2,W,fg).N(5!2,W!6,fg).N(3!3,W!6,fg).N(5!3,3!4,W,fg).N(5!4,fg) fk5()
+
+# Case 2: the left side of the bottom strand is not connected to another strand s3
+
+N(3!1,fg).N(5!1,3!2,W!5,fg).N(5!2,W!6,fg).N(3!3,W!6,fg).N(5!3,3!4,W!5,fg).N(5!4,W,fg) -> N(3!1,fg).N(5!1,3!2,W,fg).N(5!2,W!6,fg).N(3!3,W!6,fg).N(5!3,3!4,W,fg).N(5!4,W,fg) fk5()
+
+
+# 6. un-binding between complementary bases positioned in the middle of a complementary sequence
+
+N(3!1,W!+,fg).N(5!1,3!2,W!5,fg).N(5!2,W!6,fg).N(3!3,W!6,fg).N(5!3,3!4,W!5,fg).N(5!4,W!+,fg) -> N(3!1,W!+,fg).N(5!1,3!2,W,fg).N(5!2,W!6,fg).N(3!3,W!6,fg).N(5!3,3!4,W,fg).N(5!4,W!+,fg) fk6()
+N(3!1,W!7,fg).N(5!1,3!2,W!5,fg).N(5!2,W!+,fg).N(3!3,W!+,fg).N(5!3,3!4,W!5,fg).N(5!4,W!7,fg) -> N(3!1,W!7,fg).N(5!1,3!2,W,fg).N(5!2,W!+,fg).N(3!3,W!+,fg).N(5!3,3!4,W,fg).N(5!4,W!7,fg) fk6()
+
+# 7. un-binding between complementary bases where at least one ssDAN ends on that position.
+
+N(5!+,3!1,W!4,fg).N(5!1,W!3,fg).N(3!2,W!3,fg).N(5!2,3,W!4,fg) -> N(5!+,3!1,W,fg).N(5!1,W!3,fg).N(3!2,W!3,fg).N(5!2,3,W,fg) fk7()
+N(3!1,W!4,fg).N(5!1,3!+,W!3,fg).N(3!2,5,W!3,fg).N(5!2,W!4,fg) -> N(3!1,W!4,fg).N(5!1,3!+,W,fg).N(3!2,5,W,fg).N(5!2,W!4,fg) fk7()
+
+# 8. rapid un-binding between single complementary bases in the middle of non-complementary (or non-bound) sequences
+
+N(3!1,W,fg).N(5!1,3!2,W!3,fg).N(5!2,W,fg).N(W!3,fg) -> N(3!1,W,fg).N(5!1,3!2,W,fg).N(5!2,W,fg) + N(W,fg) k_max
+
+N(3!1,W!+,fg).N(5!1,3!2,W!3,fg).N(5!2,W,fg).N(3!6,W!3,fg).N(5!6,W,fg) -> N(3!1,W!+,fg).N(5!1,3!2,W,fg).N(5!2,W,fg) + N(3!6,W,fg).N(5!6,W,fg) k_max
+N(3!1,W,fg).N(5!1,3!2,W!3,fg).N(5!2,W!+,fg).N(5!6,W!3,fg).N(3!6,W,fg) -> N(3!1,W,fg).N(5!1,3!2,W,fg).N(5!2,W!+,fg) + N(5!6,W,fg).N(3!6,W,fg) k_max
+
+# 8+. rapid un-binding between a single complementary base at the end of a sequence
+
+N(3!1,W,fg).N(5!1,3,W!2,fg).N(W!2,fg) -> N(3!1,W,fg).N(5!1,3,W,fg) + N(W,fg) k_max
+N(3!1,W!+,fg).N(5!1,3,W!2,fg).N(3!4,W!2,fg).N(5!4,W,fg) -> N(3!1,W!+,fg).N(5!1,3,W,fg) + N(3!4,W,fg).N(5!4,W,fg) k_max
+
+
+N(5,3!1,W!2,fg).N(5!1,W,fg).N(W!2,fg) -> N(5,3!1,W,fg).N(5!1,W,fg) + N(W,fg) k_max
+N(5,3!1,W!2,fg).N(5!1,W!+,fg).N(W!2,5!4,fg).N(3!4,W,fg) -> N(5,3!1,W,fg).N(5!1,W!+,fg) + N(W,5!4,fg).N(3!4,W,fg) k_max
+
+
+# 8++ rapid un-biding between a single complementary base, where the complement is on the same ssDNA at distance 0 or 1
+
+N(5!1,W!2,fg).N(3!1,W!2,fg) -> N(5!1,W,fg).N(3!1,W,fg) k_max
+N(5!1,W!3,fg).N(3!1,5!2,fg).N(3!2,W!3,fg) -> N(5!1,W,fg).N(3!1,5!2,fg).N(3!2,W,fg) k_max
+
+
+# 8* un-binding between a single complementary base when the opposite neighbors of the pair are bound but not complementary, i.e., are bound but not to each-other
+
+N(b~A,3!1,W!+,fg).N(5!1,W!3,fg).N(3!6,W!3,fg).N(b~A,5!6,W!+,fg) -> N(b~A,3!1,W!+,fg).N(5!1,W,fg) + N(3!6,W,fg).N(b~A,5!6,W!+,fg) k_max
+N(b~A,3!1,W!+,fg).N(5!1,W!3,fg).N(3!6,W!3,fg).N(b~C,5!6,W!+,fg) -> N(b~A,3!1,W!+,fg).N(5!1,W,fg) + N(3!6,W,fg).N(b~C,5!6,W!+,fg) k_max
+N(b~A,3!1,W!+,fg).N(5!1,W!3,fg).N(3!6,W!3,fg).N(b~G,5!6,W!+,fg) -> N(b~A,3!1,W!+,fg).N(5!1,W,fg) + N(3!6,W,fg).N(b~G,5!6,W!+,fg) k_max
+
+N(b~C,3!1,W!+,fg).N(5!1,W!3,fg).N(3!6,W!3,fg).N(b~A,5!6,W!+,fg) -> N(b~C,3!1,W!+,fg).N(5!1,W,fg) + N(3!6,W,fg).N(b~A,5!6,W!+,fg) k_max
+N(b~C,3!1,W!+,fg).N(5!1,W!3,fg).N(3!6,W!3,fg).N(b~C,5!6,W!+,fg) -> N(b~C,3!1,W!+,fg).N(5!1,W,fg) + N(3!6,W,fg).N(b~C,5!6,W!+,fg) k_max
+N(b~C,3!1,W!+,fg).N(5!1,W!3,fg).N(3!6,W!3,fg).N(b~T,5!6,W!+,fg) -> N(b~C,3!1,W!+,fg).N(5!1,W,fg) + N(3!6,W,fg).N(b~T,5!6,W!+,fg) k_max
+
+N(b~G,3!1,W!+,fg).N(5!1,W!3,fg).N(3!6,W!3,fg).N(b~A,5!6,W!+,fg) -> N(b~G,3!1,W!+,fg).N(5!1,W,fg) + N(3!6,W,fg).N(b~A,5!6,W!+,fg) k_max
+N(b~G,3!1,W!+,fg).N(5!1,W!3,fg).N(3!6,W!3,fg).N(b~G,5!6,W!+,fg) -> N(b~G,3!1,W!+,fg).N(5!1,W,fg) + N(3!6,W,fg).N(b~G,5!6,W!+,fg) k_max
+N(b~G,3!1,W!+,fg).N(5!1,W!3,fg).N(3!6,W!3,fg).N(b~T,5!6,W!+,fg) -> N(b~G,3!1,W!+,fg).N(5!1,W,fg) + N(3!6,W,fg).N(b~T,5!6,W!+,fg) k_max
+
+N(b~T,3!1,W!+,fg).N(5!1,W!3,fg).N(3!6,W!3,fg).N(b~C,5!6,W!+,fg) -> N(b~T,3!1,W!+,fg).N(5!1,W,fg) + N(3!6,W,fg).N(b~C,5!6,W!+,fg) k_max
+N(b~T,3!1,W!+,fg).N(5!1,W!3,fg).N(3!6,W!3,fg).N(b~G,5!6,W!+,fg) -> N(b~T,3!1,W!+,fg).N(5!1,W,fg) + N(3!6,W,fg).N(b~G,5!6,W!+,fg) k_max
+N(b~T,3!1,W!+,fg).N(5!1,W!3,fg).N(3!6,W!3,fg).N(b~T,5!6,W!+,fg) -> N(b~T,3!1,W!+,fg).N(5!1,W,fg) + N(3!6,W,fg).N(b~T,5!6,W!+,fg) k_max
+
+
+N(b~A,5!1,W!+,fg).N(3!1,W!3,fg).N(5!6,W!3,fg).N(b~A,3!6,W!+,fg) -> N(b~A,5!1,W!+,fg).N(3!1,W,fg) + N(5!6,W,fg).N(b~A,3!6,W!+,fg) k_max
+N(b~A,5!1,W!+,fg).N(3!1,W!3,fg).N(5!6,W!3,fg).N(b~C,3!6,W!+,fg) -> N(b~A,5!1,W!+,fg).N(3!1,W,fg) + N(5!6,W,fg).N(b~C,3!6,W!+,fg) k_max
+N(b~A,5!1,W!+,fg).N(3!1,W!3,fg).N(5!6,W!3,fg).N(b~G,3!6,W!+,fg) -> N(b~A,5!1,W!+,fg).N(3!1,W,fg) + N(5!6,W,fg).N(b~G,3!6,W!+,fg) k_max
+
+
+N(b~C,5!1,W!+,fg).N(3!1,W!3,fg).N(5!6,W!3,fg).N(b~A,3!6,W!+,fg) -> N(b~C,5!1,W!+,fg).N(3!1,W,fg) + N(5!6,W,fg).N(b~A,3!6,W!+,fg) k_max
+N(b~C,5!1,W!+,fg).N(3!1,W!3,fg).N(5!6,W!3,fg).N(b~C,3!6,W!+,fg) -> N(b~C,5!1,W!+,fg).N(3!1,W,fg) + N(5!6,W,fg).N(b~C,3!6,W!+,fg) k_max
+N(b~C,5!1,W!+,fg).N(3!1,W!3,fg).N(5!6,W!3,fg).N(b~T,3!6,W!+,fg) -> N(b~C,5!1,W!+,fg).N(3!1,W,fg) + N(5!6,W,fg).N(b~T,3!6,W!+,fg) k_max
+
+N(b~G,5!1,W!+,fg).N(3!1,W!3,fg).N(5!6,W!3,fg).N(b~A,3!6,W!+,fg) -> N(b~G,5!1,W!+,fg).N(3!1,W,fg) + N(5!6,W,fg).N(b~A,3!6,W!+,fg) k_max
+N(b~G,5!1,W!+,fg).N(3!1,W!3,fg).N(5!6,W!3,fg).N(b~G,3!6,W!+,fg) -> N(b~G,5!1,W!+,fg).N(3!1,W,fg) + N(5!6,W,fg).N(b~G,3!6,W!+,fg) k_max
+N(b~G,5!1,W!+,fg).N(3!1,W!3,fg).N(5!6,W!3,fg).N(b~T,3!6,W!+,fg) -> N(b~G,5!1,W!+,fg).N(3!1,W,fg) + N(5!6,W,fg).N(b~T,3!6,W!+,fg) k_max
+
+N(b~T,5!1,W!+,fg).N(3!1,W!3,fg).N(5!6,W!3,fg).N(b~C,3!6,W!+,fg) -> N(b~T,5!1,W!+,fg).N(3!1,W,fg) + N(5!6,W,fg).N(b~C,3!6,W!+,fg) k_max
+N(b~T,5!1,W!+,fg).N(3!1,W!3,fg).N(5!6,W!3,fg).N(b~G,3!6,W!+,fg) -> N(b~T,5!1,W!+,fg).N(3!1,W,fg) + N(5!6,W,fg).N(b~G,3!6,W!+,fg) k_max
+N(b~T,5!1,W!+,fg).N(3!1,W!3,fg).N(5!6,W!3,fg).N(b~T,3!6,W!+,fg) -> N(b~T,5!1,W!+,fg).N(3!1,W,fg) + N(5!6,W,fg).N(b~T,3!6,W!+,fg) k_max
+
+
+# 9 rapid un-binding at a nick point between sequences s1 and s2 above (5' to 3' direction) and s3 below, where s1 is bound to s3 just by one base
+
+# 9+ rapid un-binding at a nick point between sequences s1 and s2 above (5' to 3' direction) and s3 below, where s2 is bound to s3 just by one base
+
+# 10 random unbinding of a pair of bound nucleotides
+
+N(W!1,fg).N(W!1,fg) -> N(W,fg) + N(W,fg) fk10()
+
+
+# 11. rapid un-binding between a size-2 sequence of complementary bases in the middle of non-complementary (or non-bound) sequences
+
+N(3!1,W,fg).N(5!1,3!2,W!7,fg).N(5!2,3!3,W!8,fg).N(5!3,W,fg).N(3!5,W!8,fg).N(5!5,W!7,fg) ->  N(3!1,W,fg).N(5!1,3!2,W,fg).N(5!2,3!3,W,fg).N(5!3,W,fg) + N(3!5,W,fg).N(5!5,W,fg) fk11()
+
+N(3!1,W!+,fg).N(5!1,3!2,W!7,fg).N(5!2,3!3,W!8,fg).N(5!3,W,fg).N(3!5,W!8,fg).N(5!5,3!6,W!7,fg).N(5!6,W,fg) ->  N(3!1,W!+,fg).N(5!1,3!2,W,fg).N(5!2,3!3,W,fg).N(5!3,W,fg) + N(3!5,W,fg).N(5!5,3!6,W,fg).N(5!6,W,fg) fk11()
+N(3!1,W,fg).N(5!1,3!2,W!7,fg).N(5!2,3!3,W!8,fg).N(5!3,W!+,fg).N(3!6,W,fg).N(5!6,3!5,W!8,fg).N(5!5,W!7,fg) ->  N(3!1,W,fg).N(5!1,3!2,W,fg).N(5!2,3!3,W,fg).N(5!3,W!+,fg) + N(3!6,W,fg).N(5!6,3!5,W,fg).N(5!5,W,fg) fk11()
+
+
+# NOTE check that the rule acts as it suppose, i.e. if the two strands are connected just on a point, then they break and form 2 complexes; on the other hand, if the 2 strands are connected also later on, then they will still form just one complex
+
+# 11+. rapid un-binding between a size-2 sequence of complementary base at the end of a sequence
+
+N(3!1,W,fg).N(5!1,3!2,W!7,fg).N(5!2,3,W!8,fg).N(3!3,W!8,fg).N(5!3,W!7,fg) -> N(3!1,W,fg).N(5!1,3!2,W,fg).N(5!2,3,W,fg) + N(3!3,W,fg).N(5!3,W,fg) fk11()
+N(3!1,W!+,fg).N(5!1,3!2,W!7,fg).N(5!2,3,W!8,fg).N(3!3,W!8,fg).N(5!3,3!4,W!7,fg).N(5!4,W,fg) -> N(3!1,W!+,fg).N(5!1,3!2,W,fg).N(5!2,3,W,fg) + N(3!3,W,fg).N(5!3,3!4,W,fg).N(5!4,W,fg) fk11()
+
+
+N(5,3!1,W!7,fg).N(5!1,3!2,W!8,fg).N(5!2,W,fg).N(3!3,W!8,fg).N(5!3,W!7,fg) -> N(5,3!1,W,fg).N(5!1,3!2,W,fg).N(5!2,W,fg) + N(3!3,W,fg).N(5!3,W,fg) fk11()
+N(5,3!1,W!7,fg).N(5!1,3!2,W!8,fg).N(5!2,W!+,fg).N(3!4,W,fg).N(5!4,3!3,W!8,fg).N(5!3,W!7,fg) -> N(5,3!1,W,fg).N(5!1,3!2,W,fg).N(5!2,W!+,fg) + N(3!4,W,fg).N(5!4,3!3,W,fg).N(5!3,W,fg) fk11()
+
+
+# 12 rapid un-binding between a size-3 sequence of complementary bases in the middle of a non-bound sequence k12*Temp=100*Temp
+
+
+N(3!1,W,fg).N(5!1,3!2,W!7,fg).N(5!2,3!3,W!8,fg).N(5!3,3!4,W!9,fg).N(5!4,W,fg).N(3!5,W!9,fg).N(5!5,3!6,W!8,fg).N(5!6,W!7,fg) ->  N(3!1,W,fg).N(5!1,3!2,W,fg).N(5!2,3!3,W,fg).N(5!3,3!4,W,fg).N(5!4,W,fg) + N(3!5,W,fg).N(5!5,3!6,W,fg).N(5!6,W,fg) fk12()
+
+
+# 12+ rapid un-binding between a size-3 sequence of complementary bases at the end  of a sequence k12*Temp=100*Temp
+
+N(3!1,W,fg).N(5!1,3!2,W!7,fg).N(5!2,3!3,W!8,fg).N(5!3,3,W!9,fg).N(3!4,W!9,fg).N(5!4,3!5,W!8,fg).N(5!5,W!7,fg) -> N(3!1,W,fg).N(5!1,3!2,W,fg).N(5!2,3!3,W,fg).N(5!3,3,W,fg) + N(3!4,W,fg).N(5!4,3!5,W,fg).N(5!5,W,fg) fk12()
+N(3!1,W!+,fg).N(5!1,3!2,W!7,fg).N(5!2,3!3,W!8,fg).N(5!3,3,W!9,fg).N(3!4,W!9,fg).N(5!4,3!5,W!8,fg).N(5!5,3!6,W!7,fg).N(5!6,W,fg) -> N(3!1,W!+,fg).N(5!1,3!2,W,fg).N(5!2,3!3,W,fg).N(5!3,3,W,fg) + N(3!4,W,fg).N(5!4,3!5,W,fg).N(5!5,3!6,W,fg).N(5!6,W,fg) fk12()
+
+
+N(5,3!1,W!7,fg).N(5!1,3!2,W!8,fg).N(5!2,3!3,W!9,fg).N(5!3,W,fg).N(3!4,W!9,fg).N(5!4,3!5,W!8,fg).N(5!5,W!7,fg) -> N(5,3!1,W,fg).N(5!1,3!2,W,fg).N(5!2,3!3,W,fg).N(5!3,W,fg) + N(3!4,W,fg).N(5!4,3!5,W,fg).N(5!5,W,fg) fk12()
+N(5,3!1,W!7,fg).N(5!1,3!2,W!8,fg).N(5!2,3!3,W!9,fg).N(5!3,W!+,fg).N(3!6,W,fg).N(5!6,3!4,W!9,fg).N(5!4,3!5,W!8,fg).N(5!5,W!7,fg) -> N(5,3!1,W,fg).N(5!1,3!2,W,fg).N(5!2,3!3,W,fg).N(5!3,W!+,fg) + N(3!6,W,fg).N(5!6,3!4,W,fg).N(5!4,3!5,W,fg).N(5!5,W,fg) fk12()
+
+
+# 13 rapid un-binding between a size-4 sequence of complementary bases in the middle of a non-bound sequence k13*Temp=10*Temp
+
+N(3!1,W,fg).N(5!1,3!2,W!10,fg).N(5!2,3!3,W!11,fg).N(5!3,3!4,W!12,fg).N(5!4,3!5,W!13,fg).N(5!5,W,fg).N(3!6,W!13,fg).N(5!6,3!7,W!12,fg).N(5!7,3!8,W!11,fg).N(5!8,W!10,fg) -> N(3!1,W,fg).N(5!1,3!2,W,fg).N(5!2,3!3,W,fg).N(5!3,3!4,W,fg).N(5!4,3!5,W,fg).N(5!5,W,fg) + N(3!6,W,fg).N(5!6,3!7,W,fg).N(5!7,3!8,W,fg).N(5!8,W,fg) fk13()
+
+end reaction rules

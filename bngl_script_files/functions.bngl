@@ -1,0 +1,12 @@
+begin functions
+
+fk5() = k5*Temp
+fk6() = k6*Temp
+fk7() = k7*Temp
+fk8() = k8*Temp
+fk10() = k10*Temp
+fk11() = k11*Temp
+fk12() = k12*Temp
+fk13() = k13*Temp
+
+end functions

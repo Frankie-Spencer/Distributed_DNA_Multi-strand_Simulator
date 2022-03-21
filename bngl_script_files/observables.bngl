@@ -1,0 +1,12 @@
+begin observables
+
+   Molecules    N_Bound N(W!1,fg).N(W!1,fg)
+   Molecules    N_notBound N(W,fg)
+   Molecules    N_notB_inComplex_V1 N(W,fg).N(W!1,fg).N(W!1,fg)
+   Molecules    N_notB_inComplex_V2 N(W,fg).N(5,fg).N(5,fg)
+   Molecules    Nr_complexes_V1 N(5,fg).N(5,fg)
+   Molecules    Nr_complexes_V2 N(3,fg).N(3,fg)
+   Molecules    Nr_complexesV3 N(5,,fg)
+   #Species      Nr_complexesV4 N(5,,fg)
+
+end observables
