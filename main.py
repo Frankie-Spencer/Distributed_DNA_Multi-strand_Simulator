@@ -298,7 +298,7 @@ def run_bngl_on_threads():
     sum_nucleotides = sum([len(i[0].split('.')) * int(i[1]) for i in species_set])
 
     pct = 100 / number_of_splits
-    print('\rSimulation progress...0%, 0/{} steps completed.'.format(number_of_splits), end="")
+    print('\rSimulation progress...0% | 0/{} steps completed.'.format(number_of_splits), end="")
 
     for run_step in range(1, number_of_splits + 1):
         progress_pct = run_step * pct
@@ -359,7 +359,7 @@ def run_bngl_on_threads():
         # put number of parallel threads back to user desired number
         alternative_n_threads = number_of_parallel_threads
 
-        print('\rSimulation progress...{}%, {}/{} steps completed.'.format(round(progress_pct), 
+        print('\rSimulation progress...{}% | {}/{} steps completed.'.format(round(progress_pct), 
                                                                            run_step, 
                                                                            number_of_splits), end="")
 
